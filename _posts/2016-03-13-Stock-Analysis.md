@@ -2,7 +2,6 @@
 layout: post
 title: "STOCK IPYTHON"
 description: ""
-subtitle:"Udmey 归纳学习笔记"
 category: 
 tags: [python]
 ---
@@ -14,7 +13,6 @@ tags: [python]
 
 归纳笔记
 
-虽然阿森纳首回合在主场两球落败，此前也从未能在诺坎普赢得过胜利，但今天凌晨枪手将士们还是表现出了不放弃任何晋级机会的勇气和精神，球队大部分时间与巴萨形成了对攻之势，无奈前场进攻手段和锋线把握机会能力都比对手差了一个档次，后防线又频频出现失误和漏洞，最终客场1-3再度饮恨....
    
 ```python
 from datetime import datetime
