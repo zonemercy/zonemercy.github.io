@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "STOCK IPYTHON"
-subtitle: "归纳学习笔记"
+subtitle: "复盘：巴萨进攻手段丰富，枪手出局亦有亮点"
 description: ""
 category: ""
 tags: [python]
