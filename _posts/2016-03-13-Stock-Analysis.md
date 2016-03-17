@@ -2,18 +2,14 @@
 layout: post
 title: "STOCK IPYTHON"
 description: ""
-category: 
+category: ""
 tags: [python]
 ---
 
 
-## 中文字体 苹方 苹果 知乎
-
-### 中文字体 苹方 苹果 知乎
 
 归纳笔记
-
-   
+  
 ```python
 from datetime import datetime
 from __future__ import division
