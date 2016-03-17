@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "STOCK IPYTHON "
-subtitle:"来自的Udmey的归纳学习笔记"
+title: "STOCK IPYTHON"
 description: ""
+subtitle:"Udmey 归纳学习笔记"
 category: 
 tags: [python]
 ---
-
 
 
 ## 中文字体 苹方 苹果 知乎
