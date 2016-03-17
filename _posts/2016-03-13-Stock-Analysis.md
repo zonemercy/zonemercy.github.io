@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "STOCK IPYTHON"
+title: "STOCK IPYTHON 归纳笔记"
 description: ""
 category: 
 tags: [python]
@@ -12,7 +12,9 @@ tags: [python]
 ## 中文字体 苹方 苹果 知乎
 
 ### 中文字体 苹方 苹果 知乎
-    
+
+归纳笔记 归纳笔记 归纳笔记
+   
 ```python
 from datetime import datetime
 from __future__ import division
