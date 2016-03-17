@@ -48,9 +48,21 @@ layout: default
 </header>
 
 <!-- Post Content -->
+<style>
+  .container {
+    max-width: 90vw;
+  }
+</style>
+
 <article>
+	     <h1>{{ page.title }}</h1>
+
+  			<div class="entry">
+    			{% include notebooks/{{page.notebook}}.html %}
+ 			</div>
     <div class="container">
         <div class="row">
+
 
     <!-- Post Container -->
             <div class="
@@ -58,11 +70,7 @@ layout: default
                 col-md-10 col-md-offset-1
                 post-container">
 
-				 	 <h1>{{ page.title }}</h1>
 
-  						<div class="entry">
-    					{% include notebooks/{{page.notebook}}.html %}
- 						 </div>
 
                 <hr>
 
