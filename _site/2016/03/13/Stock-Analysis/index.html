@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a description of zOnemercy">
+    <meta name="keyword"  content="This is a keyword about zonemercy">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>STOCK IPYTHON - zonemercy Blog</title>
+
+    <link rel="canonical" href="zonemercy.github.io/2016/03/13/Stock-Analysis/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">zOnemercy&you</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/home-bg.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#python" title="python">python</a>
+                        
+                    </div>
+                    <h1>STOCK IPYTHON</h1>
+                    
+                    
+                    <h2 class="subheading">复盘：巴萨进攻手段丰富，枪手出局亦有亮点</h2>
+                    
+                    <span class="meta">Posted by zOnemercy&you on March 13, 2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h3 id="section">排兵布阵</h3>
+
+<p>上周末巴萨在主场表现出了强大的控制力，凭借华丽的进攻6-0大胜赫塔菲。其实在那场比赛中，恩里克便已经考虑到了周中与阿森纳的较量，并做了充足的备战，他让球队丢掉了“挨打-反击”战术，从一开场便抢夺比赛的控制权，通过潮水般的攻势和成功的高位防守吃掉了对手。此役面对阿森纳，巴萨一开场便表明了以我为主、主动出击的态度，如果阿森纳一味防守，那一场一边倒的大屠杀将在所难免。</p>
+
+<hr />
+
+<p>好在温格决定让阿森纳在诺坎普站着死，教授最近因为球队糟糕的战绩而饱受指责，就连他在枪手的帅位也变得岌岌可危。今天凌晨，温格终于血性了一把，他收起了首回合防守反击的战术，命令球队加强中前场的逼抢和快攻，鼓励球员用更多的射门去威胁对手。厄齐尔和桑切斯很好地执行了温格的战术，只可惜球队的锋线球员实在不争气，远不如巴萨稳固的后防又频频受到MSN的打击，最终输掉了比赛</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">python
+from datetime import datetime
+from __future__ import division
+import pandas as pd    
+from pandas import Series,DataFrame
+from pandas.io.data import DataReader
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set_style('whitegrid')
+%matplotlib inline
+</code></p>
+
+<p><code class="highlighter-rouge">python
+end = datetime.now()
+start = datetime(end.year - 1,end.month,end.day)
+s = DataReader("BABA",'yahoo',start,end)
+#s.ix['2015-12-24']
+s.head()
+</code></p>
+
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adj Close</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2015-01-05</th>
+      <td>102.760002</td>
+      <td>103.019997</td>
+      <td>99.900002</td>
+      <td>101.000000</td>
+      <td>18337000</td>
+      <td>101.000000</td>
+    </tr>
+    <tr>
+      <th>2015-01-06</th>
+      <td>101.250000</td>
+      <td>103.849998</td>
+      <td>100.110001</td>
+      <td>103.320000</td>
+      <td>15720400</td>
+      <td>103.320000</td>
+    </tr>
+    <tr>
+      <th>2015-01-07</th>
+      <td>104.589996</td>
+      <td>104.739998</td>
+      <td>102.029999</td>
+      <td>102.129997</td>
+      <td>11052200</td>
+      <td>102.129997</td>
+    </tr>
+    <tr>
+      <th>2015-01-08</th>
+      <td>102.949997</td>
+      <td>105.339996</td>
+      <td>102.680000</td>
+      <td>105.029999</td>
+      <td>12942100</td>
+      <td>105.029999</td>
+    </tr>
+    <tr>
+      <th>2015-01-09</th>
+      <td>105.239998</td>
+      <td>105.300003</td>
+      <td>102.889999</td>
+      <td>103.019997</td>
+      <td>10222200</td>
+      <td>103.019997</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p><code class="highlighter-rouge">python
+s['Adj Close'].plot(legend=True,figsize=(10,4))
+</code></p>
+
+<p><img src="/assets/image/output_2_1.png" alt="png" /></p>
+
+<p><code class="highlighter-rouge">python
+s['Volume'].plot(legend=True,figsize=(10,4))
+</code></p>
+
+<p><img src="/assets/image/output_3_1.png" alt="png" /></p>
+
+<p><code class="highlighter-rouge">python
+ma_day = [10,20,40]
+for ma in ma_day:
+    column = "MA for %s days" %(str(ma))
+    s[column] = pd.rolling_mean(s['Adj Close'],ma)
+s[['Adj Close','MA for 10 days','MA for 20 days','MA for 40 days']].plot(subplots=False,figsize=(10,4))
+</code></p>
+
+<p><img src="/assets/image/output_4_1.png" alt="png" /></p>
+
+<p><code class="highlighter-rouge">python
+s['Daily Return']=s['Adj Close'].pct_change()
+# print s['Daily Return']
+s['Daily Return'].dropna().plot(figsize=(10,4),legend=True,linestyle='--',marker='s')
+print s['Daily Return'].mean()
+print s['Daily Return'].std()
+</code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>-0.000642374946063
+0.0213393676909
+</code></pre>
+</div>
+
+<p><img src="/assets/image/output_5_1.png" alt="png" /></p>
+
+<p><code class="highlighter-rouge">python
+sns.plt.xlim(-0.1,0.1)
+sns.distplot(s['Daily Return'].dropna(),color='0.2',bins=40,
+             kde_kws={"color": sns.xkcd_rgb["pale red"], "lw": 3, 
+             "bw": 0.2,"alpha": .8})
+# sns.kdeplot(s['Daily Return'].dropna())
+</code></p>
+
+<p><img src="/assets/image/output_6_1.png" alt="png" /></p>
+
+<p><code class="highlighter-rouge">python
+close_df = DataReader(['BABA','EBAY','AMZN','PYPL'],'yahoo',start,end)['Adj Close']
+close_df['AMZN'].plot()
+</code></p>
+
+<p><img src="/assets/image/output_7_1.png" alt="png" /></p>
+
+<p><code class="highlighter-rouge">python
+pct_df = close_df.pct_change()
+sns.jointplot('EBAY','PYPL',pct_df,kind='scatter',joint_kws={'alpha':0.6})
+</code></p>
+
+<p><img src="/assets/image/output_8_1.png" alt="png" /></p>
+
+<p><code class="highlighter-rouge">python
+sns.pairplot(pct_df.dropna())
+</code></p>
+
+<p><img src="/assets/image/output_9_1.png" alt="png" /></p>
+
+<p><code class="highlighter-rouge">python
+close_df1 = DataReader(['BABA','EBAY','AMZN','YHOO','WMT'],'yahoo',start,end)['Adj Close']
+pct_df1 = close_df1.pct_change()
+with sns.axes_style('darkgrid'):
+    fig, ax = plt.subplots(figsize=(6, 6))
+    sns.corrplot(pct_df1.dropna(),annot=True,
+                 cmap=sns.diverging_palette(230, 20,sep=50, 
+                 n=7,as_cmap=True))   
+</code></p>
+
+<p><img src="/assets/image/output_10_0.png" alt="png" /></p>
+
+<p>```python
+risk_df = pct_df1</p>
+
+<p>plt.ylim([0.01,0.028])
+plt.xlim([-0.005,0.01])
+plt.xlabel(‘Expected returns’)
+plt.ylabel(‘Risk’)</p>
+
+<p>plt.scatter(risk_df.mean(),risk_df.std(),alpha=0.5,
+            s=close_df1.dropna().mean(),label=’Average Adj Close’)
+plt.legend(loc=1)</p>
+
+<p>for label, x, y in zip(risk_df.columns, risk_df.mean(), risk_df.std()):
+    plt.annotate(
+        label, 
+        xy = (x, y), xytext = (30, 10),
+        textcoords = ‘offset points’, ha = ‘left’, va = ‘bottom’,
+        bbox = dict(boxstyle = ‘round,pad=0.3’, fc = ‘yellow’, alpha = .5),
+        arrowprops = dict(arrowstyle = ‘-‘, connectionstyle = ‘arc3,
+        rad=-0.1’))
+```</p>
+
+<p><img src="/assets/image/output_11_0.png" alt="png" /></p>
+
+<p><code class="highlighter-rouge">python
+risk_df['BABA'].quantile(0.05)
+</code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>-0.032540597138561403
+</code></pre>
+</div>
+
+<p>```python
+days = 365
+dt = 1/days
+mu = risk_df.mean()[‘BABA’] # drift of expected return
+sigma = risk_df.std()[‘BABA’] # volatility of stock</p>
+
+<p>def stock_monte_carlo(start_price,days,mu,sigma):
+    price = np.zeros(days)
+    price[0] = start_price
+    shock = np.zeros(days)
+    drift = np.zeros(days)</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>for x in xrange(1,days):
+    shock[x] = np.random.normal(loc=mu * dt, scale=sigma * np.sqrt(dt))
+    drift[x] = mu * dt
+    price[x] = price[x-1] + (price[x-1] * (drift[x] + shock[x]))
+return price
+</code></pre>
+</div>
+
+<p>start_price = 103.94</p>
+
+<p>for run in xrange(100):
+    plt.plot(stock_monte_carlo(start_price,days,mu,sigma))</p>
+
+<h1 id="pltplotsadj-close">plt.plot(s[‘Adj Close’])</h1>
+<p>plt.xlabel(“Days”)
+plt.ylabel(“Price”)
+plt.title(‘Alibaba based on Monte Carlo Simulation’)
+```</p>
+
+<p><img src="/assets/image/output_13_1.png" alt="png" /></p>
+
+<p>```python
+# Set a large numebr of runs
+runs = 10000</p>
+
+<h1 id="create-an-empty-matrix-to-hold-the-end-price-data">Create an empty matrix to hold the end price data</h1>
+<p>simulations = np.zeros(runs)</p>
+
+<h1 id="set-the-print-options-of-numpy-to-only-display-0-5-points-from-an-array-to-suppress-output">Set the print options of numpy to only display 0-5 points from an array to suppress output</h1>
+<p>np.set_printoptions(threshold=5)</p>
+
+<p>for run in xrange(runs):  <br />
+    # Set the simulation data point as the last stock price for that run
+    simulations[run] = stock_monte_carlo(start_price,days,mu,sigma)[days-1];
+```</p>
+
+<p>```python
+# Now we’lll define q as the 1% empirical qunatile, this basically means that 99% of the values should fall between here
+q = np.percentile(simulations, 1)</p>
+
+<h1 id="now-lets-plot-the-distribution-of-the-end-prices">Now let’s plot the distribution of the end prices</h1>
+<p>plt.hist(simulations,bins=200)</p>
+
+<h1 id="using-pltfigtext-to-fill-in-some-additional-information-onto-the-plot">Using plt.figtext to fill in some additional information onto the plot</h1>
+
+<h1 id="starting-price">Starting Price</h1>
+<p>plt.figtext(0.65, 0.8, “Start price: $%.2f” %start_price)
+# Mean ending price
+plt.figtext(0.65, 0.7, “Mean final: $%.2f” % simulations.mean())</p>
+
+<h1 id="variance-of-the-price-within-99-confidence-interval">Variance of the price (within 99% confidence interval)</h1>
+<p>plt.figtext(0.65, 0.6, “VaR(0.99): $%.2f” % (start_price - q,), color=’.4’)</p>
+
+<h1 id="display-1-quantile">Display 1% quantile</h1>
+<p>plt.figtext(0.65, 0.5, “q(0.99): $%.2f” % q, color=sns.xkcd_rgb[“pale red”])</p>
+
+<h1 id="plot-a-line-at-the-1-quantile-result">Plot a line at the 1% quantile result</h1>
+<p>plt.axvline(x=q, linewidth=3,color=sns.xkcd_rgb[“pale red”],alpha=.8)
+plt.axvline(x=start_price, linewidth=3,color=’.6’,alpha=.6)</p>
+
+<h1 id="title">Title</h1>
+<p>plt.title(u”Final price distribution for Alibaba Stock after %s days” % days, weight=’bold’);
+```</p>
+
+<p><img src="/assets/image/output_15_0.png" alt="png" /></p>
+
+
+
+                <hr>
+
+                
+
+
+                <ul class="pager">
+                    
+                    
+                </ul>
+
+
+                
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+            </div>
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "zongyiliu";
+    var disqus_identifier = "/2016/03/13/Stock-Analysis";
+    var disqus_url = "zonemercy.github.io/2016/03/13/Stock-Analysis/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/p/1005051245975921/home?from=page_100505&mod=TAB&is_all=1#place">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/liu.zongyi.5">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/zonemercy">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; zOnemercy&you 2016
+                    <br>
+                    Theme © <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- Highlight.js -->
+<script>
+    async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+        hljs.initHighlightingOnLoad();
+    })
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        // var $nav = document.querySelector("nav");
+        // if($nav) FastClick.attach($nav);
+
+        // global FastClick!!
+        FastClick.attach(document.body);    
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-49627206-1';
+    var _gaDomain = 'zonemercy.github.io';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/post-bg-universe.jpg" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
