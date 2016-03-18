@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>zOnemercy&amp;you</title>
+    <title>zOnemercy and you</title>
     <description>This is a description of zOnemercy</description>
     <link>zonemercy.github.io/</link>
     <atom:link href="zonemercy.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 18 Mar 2016 09:33:16 +0100</pubDate>
-    <lastBuildDate>Fri, 18 Mar 2016 09:33:16 +0100</lastBuildDate>
+    <pubDate>Fri, 18 Mar 2016 15:41:36 +0100</pubDate>
+    <lastBuildDate>Fri, 18 Mar 2016 15:41:36 +0100</lastBuildDate>
     <generator>Jekyll v3.1.0</generator>
+    
+      <item>
+        <title>Oscar Prediction</title>
+        <description>&lt;p&gt;小李子的故事 小李子的故事 小李子的故事 小李子的故事&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Mar 2016 00:00:00 +0100</pubDate>
+        <link>zonemercy.github.io/2016/03/15/Oscar/</link>
+        <guid isPermaLink="true">zonemercy.github.io/2016/03/15/Oscar/</guid>
+        
+        <category>datascience</category>
+        
+        
+      </item>
     
       <item>
         <title>STOCK IPYTHON</title>
