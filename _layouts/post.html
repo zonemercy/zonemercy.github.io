@@ -59,15 +59,18 @@ layout: default
                 post-container">
 
 
-                <i class="fa fa-quote-left fa-5x fa-pull-left fa-border"></i>{{ content }}
+                {{ content }}
 
                 <i class="fa fa-camera-retro fa-5x"></i> fa-5x
                 <i class="fa fa-spinner fa-spin"></i>
                 <i class="fa fa-circle-o-notch fa-spin"></i>
                 <i class="fa fa-refresh fa-spin"></i>
                 <i class="fa fa-cog fa-spin"></i>
-                <i class="fa fa-spinner fa-pulse"></i>
 
+                <div class="social-share">
+                    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ url }}&via=Zonemercy" target="_blank" title="Share this post on Twitter">
+                    <i class="fa fa-twitter-square"></i></a>
+                </div>
 
                 <ul class="pager">
                     {% if page.previous.url %}
