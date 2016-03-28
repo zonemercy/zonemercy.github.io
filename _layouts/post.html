@@ -61,6 +61,11 @@ layout: default
 
                 {{ content }}
 
+                {% assign tagStr = '' %}
+                {% for tag in page.tags %}
+                    {% capture tagStr %}{{ tagStr }},{{ tag }}{% endcapture %}
+                {% endfor %}
+
                 <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://{{ site.url }}{{ page.url }}&via=zonemercy&hashtags={{ tagStr }}" rel="nofollow" target="_blank" title="Share on Twitter">
                 <i class="fa fa-twitter-square fa-2x"></i></a>
                 <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
