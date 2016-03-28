@@ -65,49 +65,19 @@ layout: default
                 {% for tag in page.tags %}
                     {% capture tagStr %}{{ tagStr }},{{ tag }}{% endcapture %}
                 {% endfor %}
+            <div class="sharing">    
                 <i class="fa fa-share-square-o fa-2x"></i>
                 <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://{{ site.url }}{{ page.url }}&via=zonemercy&hashtags={{ tagStr }}" rel="nofollow" target="_blank" title="Share on Twitter">
                 <i class="fa fa-twitter-square fa-2x"></i></a>
                 <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
                 <i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="https://plus.google.com/share?url=https://{{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">
+                <i class="fa fa-google-plus-square fa-2x"></i></a>  
                 <a href="http://v.t.sina.com.cn/share/share.php?title=%40zonemercy+发表了新博文：{{ page.title }}&url=https://{{ site.url }}{{ page.url }}" target="_blank" title="Share this post on Sina Weibo">
                 <i class="fa fa-weibo fa-2x"></i></a>
-                <a href="https://plus.google.com/share?url=https://{{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">
-                <i class="fa fa-google-plus-square"></i></a>  
+ 
+            </div>
 
-
-<div class="sharing">
-    <br/>
-    <br/>
-<!-- Make an animated slide out drawer later -->
-    <ul>
-        <li><i class="fa fa-share-square-o"></i></li>
-        <li><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter">
-                <i class="fa fa-twitter-square">
-                    ::before
-                </i>
-        </a></li>
-        
-        <li><a href="http://www.linkedin.com/shareArticle?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on LinkedIn">
-                <i class="fa fa-linkedin-square"></i>
-        </a></li>
-        
-      
-        <li><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
-                <i class="fa fa-facebook-square"></i>
-        </a></li>
-  
-           <li><a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">
-                <i class="fa fa-google-plus-square"></i>
-        </a></li>
-
-
-        <li><a href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on Reddit">
-                <i class="fa fa-reddit-square"></i>
-        </a></li>
-
-        </ul>
-</div>
 
                 <ul class="pager">
                     {% if page.previous.url %}
