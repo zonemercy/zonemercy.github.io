@@ -153,12 +153,25 @@ pre code {
   margin-bottom: 15px;
 }
 .post-container a {
-  color: #337ab7;
+  color: #BBC7CC;
 }
 .post-container a:hover,
 .post-container a:focus {
-  color: #0085a1;
+  color: #3b5998;
 }
+.post-container .sharing .icon-twitter:hover {
+    color: #55acee;
+    transition: color 0.9s ease;
+}
+.post-container .sharing .icon-facebook:hover {
+    color: #3b5998;
+    transition: color 0.9s ease;
+}
+.post-container .sharing .icon-google-plus:hover {
+    color: #dd4b39;
+    transition: color 0.9s ease;
+}
+
 .post-container h1,
 .post-container h2,
 .post-container h3,
