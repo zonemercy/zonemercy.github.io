@@ -73,8 +73,15 @@ layout: default
                 post-container">
 
 
-                {% include notebooks/{{page.notebook}}.html %}
+            <div class="row">
+            <style>
+             .container {
+              max-width: 90vw;
+                }
+            </style>
 
+            {% include notebooks/{{page.notebook}}.html %}
+            </div>
 
             <hr>
 
