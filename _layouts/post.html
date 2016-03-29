@@ -65,10 +65,8 @@ layout: default
                 {% for tag in page.tags %}
                     {% capture tagStr %}{{ tagStr }},{{ tag }}{% endcapture %}
                 {% endfor %}
-            <h6>Share This Post</h6>
             <div class="sharing">    
-                <h5>Share This Post</h5>
-                <i style="margin-right:20px" class="fa fa-share-alt fa-lg fa-spin"></i>
+                <i style="margin-right:15px" class="fa fa-share-alt fa-pull-center fa-lg fa-spin"></i>
                 <a style="margin-right:10px" href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://{{ site.url }}{{ page.url }}&via=zonemercy&hashtags={{ tagStr }}" rel="nofollow" target="_blank" title="Share on Twitter">
                 <i class="fa fa-twitter-square fa-2x"></i></a>
                 <a style="margin-right:10px" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
