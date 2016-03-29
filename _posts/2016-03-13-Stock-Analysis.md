@@ -369,4 +369,4 @@ plt.title(u"Final price distribution for Alibaba Stock after %s days" % days, we
 
 ![png](/assets/image/output_15_0.png)
 
-
+---
