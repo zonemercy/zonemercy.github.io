@@ -61,10 +61,14 @@ layout: default
 
                 {{ content }}
 
-                {% assign tagStr = '' %}
-                {% for tag in page.tags %}
-                    {% capture tagStr %}{{ tagStr }},{{ tag }}{% endcapture %}
-                {% endfor %}
+
+            <hr>
+
+            {% assign tagStr = '' %}
+            {% for tag in page.tags %}
+                {% capture tagStr %}{{ tagStr }},{{ tag }}{% endcapture %}
+            {% endfor %}
+
             <div class="sharing">    
                 <i style="margin-right:15px" class="fa fa-share-alt fa-lg fa-spin"></i>
                 <a style="margin-right:5px" href="https://twitter.com/intent/tweet?text={{ page.title }}&url=http://{{ site.url }}{{ page.url }}&via=zonemercy&hashtags={{ tagStr }}" rel="nofollow" target="_blank" title="Share on Twitter">
@@ -75,8 +79,9 @@ layout: default
                 <i class="fa fa-google-plus-square fa-lg"></i></a>  
                 <a href="http://v.t.sina.com.cn/share/share.php?title=%40zonemercy+发表了新博文：{{ page.title }} -- {{ page.subtitle }}&url=http://{{ site.url }}{{ page.url }}" target="_blank" title="Share this post on Sina Weibo">
                 <i class="fa fa-weibo fa-lg"></i></a>
- 
             </div>
+            
+            <hr>
 
 
                 <ul class="pager">
