@@ -8,9 +8,8 @@ category: ""
 tags: [python]
 ---
 
-#  Hux Blog <i class="fa fa-twitter fa-lg"></i>
+#  APPT 1656 <i class="fa fa-twitter fa-lg"></i>
 
-### [View Live Hux Blog](http://huxpro.github.io)
 
 ![](/img/appt1656.jpg)
 

@@ -158,6 +158,10 @@ pre code {
   color: #4C72B0;
 }
 
+.post-container p a:hover{
+  background-color:#F4F4F4;
+}
+
 /*achorjs css*/
 .post-container .anchorjs-link {
   color: #BBC7CC;
@@ -166,34 +170,9 @@ pre code {
   color: #4C72B0;
 }
 *:hover > .anchorjs-link {
-  transition: color 0.4s ease;
+  transition: color 0.4s; 
 }
-/*.post-container a {
-  padding: 8px 0;
-}
-.post-container a::after {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: rgba(0,0,0,0.1);
-  content: '';
-  opacity: 0;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s;
-  -webkit-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  transform: translateY(10px);
-}
-.post-container a :hover::after,
-.post-container a :focus::after {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  transform: translateY(0px);
-}*/
+
 
 .post-container .sharing a {
   color: #BBC7CC;
