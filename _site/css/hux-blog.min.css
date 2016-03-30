@@ -159,6 +159,10 @@ pre code {
 .post-container a:focus {
   color: #3b5998;
 }
+
+.post-container .sharing a {
+  color: #BBC7CC;
+}
 .post-container .sharing .icon-twitter:hover {
     color: #55acee;
     transition: color 0.9s ease;

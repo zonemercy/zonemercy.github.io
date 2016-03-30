@@ -5,8 +5,8 @@
     <description>This is a description of zOnemercy</description>
     <link>zonemercy.github.io/</link>
     <atom:link href="zonemercy.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 29 Mar 2016 22:40:17 +0200</pubDate>
-    <lastBuildDate>Tue, 29 Mar 2016 22:40:17 +0200</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2016 23:43:56 +0200</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2016 23:43:56 +0200</lastBuildDate>
     <generator>Jekyll v3.1.0</generator>
     
       <item>
@@ -24,13 +24,32 @@
     
       <item>
         <title>STOCK IPYTHON</title>
-        <description>&lt;h3 id=&quot;post-test&quot;&gt;Post Test&lt;/h3&gt;
+        <description>&lt;h1 id=&quot;hux-blog&quot;&gt;Hux Blog&lt;/h1&gt;
+
+&lt;h2 id=&quot;view-live-hux-bloghttphuxprogithubio&quot;&gt;&lt;a href=&quot;http://huxpro.github.io&quot;&gt;View Live Hux Blog&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/post-bg-kuaidi.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;i class=&quot;fa fa-twitter fa-5x&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;page-build-warning-email&quot;&gt;“Page Build Warning” email&lt;/h3&gt;
+
+&lt;p&gt;These days, some of you must receive a “Page Build Warning” email from github after you commit happily. &lt;strong&gt;Don’t Worried!&lt;/strong&gt; It just that github changes its build environment.&lt;/p&gt;
+
+&lt;p&gt;In this mail, github told us:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You are attempting to use the ‘pygments’ highlighter, which is currently unsupported on GitHub Pages. Your site will use ‘rouge’ for highlighting instead. To suppress this warning, change the ‘highlighter’ value to ‘rouge’ in your ‘_config.yml’.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So, just edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;, find &lt;code class=&quot;highlighter-rouge&quot;&gt;highlighter: pygments&lt;/code&gt;, change it to &lt;code class=&quot;highlighter-rouge&quot;&gt;highlighter: rouge&lt;/code&gt; and the warning will be gone.&lt;/p&gt;
+
+&lt;h2 id=&quot;boilerplate-beta&quot;&gt;Boilerplate (beta)&lt;/h2&gt;
+
+&lt;p&gt;Want to clone a boilerplate instead of my buzz blog? Here comes this!&lt;/p&gt;
+
+&lt;h3 id=&quot;post-test&quot;&gt;Post Test&lt;/h3&gt;
 
 &lt;p&gt;上周末巴萨在主场表现出了强大的控制力，凭借华丽的进攻6-0大胜赫塔菲。其实在那场比赛中，恩里克便已经考虑到了周中与阿森纳的较量，并做了充足的备战，他让球队丢掉了“挨打-反击”战术，从一开场便抢夺比赛的控制权，通过潮水般的攻势和成功的高位防守吃掉了对手。此役面对阿森纳，巴萨一开场便表明了以我为主、主动出击的态度，如果阿森纳一味防守，那一场一边倒的大屠杀将在所难免。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;好在温格决定让阿森纳在诺坎普站着死，教授最近因为球队糟糕的战绩而饱受指责，就连他在枪手的帅位也变得岌岌可危。今天凌晨，温格终于血性了一把，他收起了首回合防守反击的战术，命令球队加强中前场的逼抢和快攻，鼓励球员用更多的射门去威胁对手。厄齐尔和桑切斯很好地执行了温格的战术，只可惜球队的锋线球员实在不争气，远不如巴萨稳固的后防又频频受到MSN的打击，最终输掉了比赛&lt;/p&gt;
 
 &lt;hr /&gt;
 
