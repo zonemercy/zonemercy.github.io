@@ -1460,6 +1460,24 @@ blockquote {
   font-size: 17.5px;
   border-left: 5px solid #eee;
 }
+
+blockquote:before {
+  content: " ";
+  font-size: 24pt;
+  text-align: center;
+  line-height: 42px;
+  color: #fff;
+  float: left;
+  position: relative;
+  top: 30px;
+  border-radius: 25px;
+
+  display: block;
+  height: 25px;
+  width: 25px;
+}
+
+
 blockquote p:last-child,
 blockquote ul:last-child,
 blockquote ol:last-child {

@@ -105,6 +105,7 @@ blockquote {
   font-size: 0.95em;
   margin: 20px 0 20px;
 }
+
 blockquote p {
   margin: 0;
 }
@@ -153,34 +154,66 @@ pre code {
   margin-bottom: 15px;
 }
 .post-container a {
-  color: #BBC7CC;
-}
-.post-container a:hover,
-.post-container a:focus {
-  /*color: #778899;*/
+  /*color: #BBC7CC;*/
   color: #4C72B0;
 }
 
+/*achorjs css*/
+.post-container .anchorjs-link {
+  color: #BBC7CC;
+}
+.post-container .anchorjs-link:hover {
+  color: #4C72B0;
+}
+*:hover > .anchorjs-link {
+  transition: color 0.4s ease;
+}
+/*.post-container a {
+  padding: 8px 0;
+}
+.post-container a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(0,0,0,0.1);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+.post-container a :hover::after,
+.post-container a :focus::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}*/
 
 .post-container .sharing a {
   color: #BBC7CC;
 }
 .post-container .sharing .icon-twitter:hover {
     color: #55acee;
-    transition: color 0.9s ease;
+    transition: color 0.8s ease;
 }
 .post-container .sharing .icon-facebook:hover {
     color: #3b5998;
-    transition: color 0.9s ease;
+    transition: color 0.8s ease;
 }
 .post-container .sharing .icon-google-plus:hover {
     color: #dd4b39;
-    transition: color 0.9s ease;
+    transition: color 0.8s ease;
 } 
 
 .post-container .sharing .icon-weibo:hover {
     color: #E6162D;
-    transition: color 0.9s ease;
+    transition: color 0.8s ease;
 }
 
 .post-container h1,
@@ -770,16 +803,16 @@ form .row:first-child .floating-label-form-group {
   background-color: #404040;
   cursor: not-allowed;
 }
-::-moz-selection {
+/*::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
-}
-::selection {
+  background: #8B0000;
+}*/
+/*::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
-}
+  background: #8B0000;
+}*/
 img::selection {
   color: white;
   background: transparent;
