@@ -12,7 +12,7 @@ tags: [python]
 
 ### [View Live Hux Blog](http://huxpro.github.io)
 
-![](/img/zongyi.jpg)
+![](/img/zongyi.JPG)
 
 
 ### "Page Build Warning" email
