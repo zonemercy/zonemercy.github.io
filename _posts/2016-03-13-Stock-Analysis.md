@@ -8,16 +8,16 @@ category: ""
 tags: [python]
 ---
 
-# Hux Blog
+#  Hux Blog <i class="fa fa-twitter fa-lg"></i>
 
-## [View Live Hux Blog](http://huxpro.github.io)
+### [View Live Hux Blog](http://huxpro.github.io)
 
 ![](/img/post-bg-kuaidi.jpg)
-<i class="fa fa-twitter fa-5x"></i>
+
 
 ### "Page Build Warning" email
 
-These days, some of you must receive a "Page Build Warning" email from github after you commit happily. **Don't Worried!** It just that github changes its build environment.
+ These days, some of you must receive a "Page Build Warning" email from github after you commit happily. **Don't Worried!** It just that github changes its build environment.
 
 In this mail, github told us:
 
