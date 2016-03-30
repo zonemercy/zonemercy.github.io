@@ -8,9 +8,9 @@ category: ""
 tags: [python]
 ---
 
-#Hux Blog
+# Hux Blog
 
-##[View Live Hux Blog](http://huxpro.github.io)
+## [View Live Hux Blog](http://huxpro.github.io)
 
 ![](/img/post-bg-kuaidi.jpg)
 <i class="fa fa-twitter fa-5x"></i>
