@@ -12,12 +12,13 @@ tags: [python]
 
 ### [View Live Hux Blog](http://huxpro.github.io)
 
-![](/img/post-bg-kuaidi.jpg)
+![](/img/zongyi.jpg)
 
 
 ### "Page Build Warning" email
 
  These days, some of you must receive a "Page Build Warning" email from github after you commit happily. **Don't Worried!** It just that github changes its build environment.
+ [View Live Hux Blog](http://huxpro.github.io)
 
 In this mail, github told us:
 
