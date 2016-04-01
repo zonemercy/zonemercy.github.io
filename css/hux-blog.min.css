@@ -470,6 +470,11 @@ pre code {
     /* response on desktop */
   }
 }
+@media (max-width: 767px) {
+  .intro-header  {
+    background-attachment: scroll;
+    }
+}
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
@@ -650,7 +655,13 @@ footer {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  margin-top: 72px;
+  margin-top: 32px;
+}
+@media (max-width: 767px) {
+  footer  {
+    background-attachment: scroll;
+    margin-top: 0px;
+    }
 }
 footer .list-inline {
   margin: 0;
@@ -952,7 +963,7 @@ img::-moz-selection {
   background-color: inherit;
 }
 .navbar-default .navbar-toggle:active {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
 }
 /* Hux customize Style for navBar button */
 .navbar-default .navbar-toggle {
@@ -1055,3 +1066,8 @@ img::-moz-selection {
 .page-fullscreen footer .copyright a:hover {
   color: #ddd;
 }
+
+/*@media (max-width: 1024px)
+.intro-header  {
+    background-attachment: scroll;
+}*/
