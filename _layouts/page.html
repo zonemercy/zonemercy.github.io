@@ -3,19 +3,40 @@ layout: default
 ---
 
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<header class="intro-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <!--<hr class="small">-->
+                    <!-- <hr class="light" style="max-width: 100px;"> -->
                     <span class="subheading">{{ page.description }}</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/appt1656.jpg')
+    }
+
+    footer{
+    position: relative;
+    background-image: url('/img/appt1656.jpg')
+    }
+
+    {% if page.header-mask %}
+    header.intro-header .header-mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0,0,0, {{ page.header-mask }});
+    }
+    {% endif %}
+</style>
 
 <!-- Main Content -->
 <div class="container">

@@ -141,15 +141,27 @@
 
     <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/post-bg-unix-linux.jpg" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
 
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('/img/post-bg-unix-linux.jpg')
+        background-image: url('/img/home-bg.jpg')
     }
 
+    footer{
+    position: relative;
+    background-image: url('/img/home-bg.jpg')
+    }
+
+    
+    header.intro-header .header-mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0,0,0, 0.45);
+    }
     
 </style>
 <header class="intro-header" >
@@ -189,9 +201,7 @@
 
                 <h1 id="appt-1656-i-classfa-fa-twitter-fa-lgi">APPT 1656 <i class="fa fa-twitter fa-lg"></i></h1>
 
-<p><img src="/img/appt1656.jpg" alt="" /></p>
-
-<h3 id="page-build-warning-email">“Page Build Warning” email</h3>
+<h2 id="page-build-warning-email">“Page Build Warning” email</h2>
 
 <p>These days, some of you must receive a “Page Build Warning” email from github after you commit happily. <strong>Don’t Worried!</strong> It just that github changes its build environment.
  <a href="http://huxpro.github.io">View Live Hux Blog</a></p>
@@ -203,6 +213,8 @@
 </blockquote>
 
 <p>So, just edit <code class="highlighter-rouge">_config.yml</code>, find <code class="highlighter-rouge">highlighter: pygments</code>, change it to <code class="highlighter-rouge">highlighter: rouge</code> and the warning will be gone.</p>
+
+<p><img src="/img/appt1656.jpg" alt="" /></p>
 
 <h2 id="boilerplate-beta">Boilerplate (beta)</h2>
 
@@ -538,26 +550,11 @@ plt.axvline(x=start_price, linewidth=3,color=’.6’,alpha=.6)</p>
                     
                 </ul>
 
-
-
-
                 <div class="comment">
                      <div id="disqus_thread" class="disqus-thread"></div>
                  </div>
             </div>
 
-    <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                
-
-                <!-- Friends Blog -->
-                
-            </div>
         </div>
     </div>
 </article>
@@ -613,7 +610,7 @@ s.setAttribute('data-timestamp', +new Date());
     })
 </script>
 <style>
-    @media all and (min-width: 800px) {
+    @media all and (min-width: 768px) {
         .anchorjs-link{
             position: absolute;
             left: -0.75em;
@@ -685,12 +682,6 @@ s.setAttribute('data-timestamp', +new Date());
                 <p class="copyright text-muted">
                     Copyright &copy; zonemercy 2016
                     <br>
-<!--                     Theme © <a href="http://huangxuan.me">Hux</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
-                    </iframe> -->
                 </p>
             </div>
         </div>
@@ -719,7 +710,7 @@ s.setAttribute('data-timestamp', +new Date());
     }
 </script>
 
-<!-- Highlight.js -->
+<!-- Highlight.js 
 <script>
     async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
         hljs.initHighlightingOnLoad();
@@ -735,7 +726,7 @@ s.setAttribute('data-timestamp', +new Date());
         })
     }
 </script>
-<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">-->
 
 <!--fastClick.js -->
 <script>
@@ -766,23 +757,6 @@ s.setAttribute('data-timestamp', +new Date());
     ga('send', 'pageview');
 </script>
 
-
-
-<!-- Baidu Tongji -->
-
-<script>
-    // dynamic User by Hux
-    var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
-
-    // Originial
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?" + _baId;
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-</script>
 
 
 

@@ -457,12 +457,14 @@ pre code {
   background: no-repeat center center;
   background-color: #808080;
   background-attachment: fixed;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 0px;
-  /* 0 on mobile, modify by Hux */
+
+
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
@@ -470,7 +472,7 @@ pre code {
     /* response on desktop */
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .intro-header  {
     background-attachment: scroll;
     }
@@ -650,14 +652,14 @@ footer {
   /*padding: 50px 0 65px;*/
   padding: 100px 0 100px;
   position: relative;
-  background-image: url('/img/post-bg-unix-linux.jpg');
+  /*background-image: url('/img/post-bg-unix-linux.jpg');*/
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   margin-top: 36px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   footer  {
     background-attachment: scroll;
     margin-top: 0px;
@@ -671,8 +673,10 @@ footer .list-inline {
 }
 footer .copyright {
   font-size: 14px;
+  font-weight: lighter;
   text-align: center;
   margin-bottom: 0;
+  margin-top: 20px;
 }
 footer .copyright a {
   color: #337ab7;
@@ -1068,8 +1072,3 @@ img::-moz-selection {
 .page-fullscreen footer .copyright a:hover {
   color: #ddd;
 }
-
-/*@media (max-width: 1024px)
-.intro-header  {
-    background-attachment: scroll;
-}*/

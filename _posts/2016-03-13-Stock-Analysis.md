@@ -6,15 +6,15 @@ subtitle: "复盘：巴萨进攻手段丰富，枪手出局亦有亮点"
 description: ""
 category: ""
 tags: [python]
+header-img: "img/home-bg.jpg"
+header-mask: "0.45"
 ---
 
 #  APPT 1656 <i class="fa fa-twitter fa-lg"></i>
 
 
-![](/img/appt1656.jpg)
 
-
-### "Page Build Warning" email
+## "Page Build Warning" email
 
  These days, some of you must receive a "Page Build Warning" email from github after you commit happily. **Don't Worried!** It just that github changes its build environment.
  [View Live Hux Blog](http://huxpro.github.io)
@@ -25,6 +25,7 @@ In this mail, github told us:
 
 So, just edit `_config.yml`, find `highlighter: pygments`, change it to `highlighter: rouge` and the warning will be gone.
 
+![](/img/appt1656.jpg)
 
 ## Boilerplate (beta)
 
