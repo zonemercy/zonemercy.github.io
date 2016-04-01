@@ -647,6 +647,9 @@ footer {
   position: relative;
   background-image: url('/img/post-bg-unix-linux.jpg');
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
   margin-top: 72px;
 }
 footer .list-inline {
