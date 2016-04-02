@@ -5,13 +5,15 @@
     <description>This is a description of zOnemercy</description>
     <link>zonemercy.github.io/</link>
     <atom:link href="zonemercy.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 02 Apr 2016 15:39:42 +0200</pubDate>
-    <lastBuildDate>Sat, 02 Apr 2016 15:39:42 +0200</lastBuildDate>
+    <pubDate>Sun, 03 Apr 2016 01:05:20 +0200</pubDate>
+    <lastBuildDate>Sun, 03 Apr 2016 01:05:20 +0200</lastBuildDate>
     <generator>Jekyll v3.1.0</generator>
     
       <item>
-        <title>OSCAR PREDICTION</title>
-        <description>&lt;p&gt;小李子的故事 小李子的故事 小李子的故事 小李子的故事&lt;/p&gt;
+        <title>OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;小李子的故事&lt;/h1&gt;
+
+&lt;p&gt;小李子缓缓登上领奖台，并没有去触碰小金人而是慢慢从口袋里拿出了陀螺，放到领奖台上旋转，然后注视着旋转的陀螺等待着它的停止。&lt;/p&gt;
 </description>
         <pubDate>Tue, 15 Mar 2016 00:00:00 +0100</pubDate>
         <link>zonemercy.github.io/2016/03/15/Oscar-copy/</link>
@@ -350,7 +352,7 @@ plt.axvline(x=start_price, linewidth=3,color=’.6’,alpha=.6)&lt;/p&gt;
       </item>
     
       <item>
-        <title>FIRST TEST</title>
+        <title>WHAT&#39;S FIRST TEST</title>
         <description>&lt;h1 id=&quot;appt-1656-i-classfa-fa-twitter-fa-lgi&quot;&gt;APPT 1656 &lt;i class=&quot;fa fa-twitter fa-lg&quot;&gt;&lt;/i&gt;&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/appt1656.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
