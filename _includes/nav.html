@@ -19,11 +19,12 @@
                     <li>
                         <a href="{{ site.baseurl }}/">Home</a>
                     </li>
-                    {% for page in site.pages %}{% if page.title %}
                     <li>
-                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                        <a href="/tags/">tag</a>
                     </li>
-                    {% endif %}{% endfor %}
+                    <li>
+                        <a href="/404/">About</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -38,7 +39,7 @@
     var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
-    // var $collapse = document.querySelector('.navbar-collapse');
+    var $collapse = document.querySelector('.navbar-collapse');
 
     var __HuxNav__ = {
         close: function(){
