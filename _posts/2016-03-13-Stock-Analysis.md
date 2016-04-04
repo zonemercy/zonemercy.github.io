@@ -4,10 +4,10 @@ title: "STOCK IPYTHON"
 comments: true
 subtitle: "复盘：巴萨进攻手段丰富，枪手出局亦有亮点"
 description: ""
-category: ""
+catalog: true
 tags: [python]
 header-img: "img/home-bg.jpg"
-header-mask: "0.45"
+header-mask: "0.2"
 ---
 
 #  APPT 1656 <i class="fa fa-twitter fa-lg"></i>

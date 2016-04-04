@@ -4,7 +4,7 @@ title: "WHAT'S FIRST TEST"
 comments: true
 subtitle: "some of you must receive a 「Page Build Warning」 email"
 description: ""
-category: ""
+catalog: true
 tags: [python]
 header-img: "img/post-bg-unix-linux1.jpg"
 ---

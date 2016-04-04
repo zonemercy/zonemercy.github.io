@@ -3,8 +3,9 @@ layout: post
 title: "OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar"
 subtitle: "小李子的故事"
 header-img: "img/cat1.jpg"
+header-mask: "0.2"
 description: ""
-category: 
+catalog: true
 tags:
     - python
     - data science
