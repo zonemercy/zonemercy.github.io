@@ -89,7 +89,10 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  /*color: #808080;*/
+  /*color: #4C72B0;*/
+  color: #00879F;
+  color: #0f4d92;
 }
 a img:hover,
 a img:focus {
@@ -178,20 +181,20 @@ pre code {
 }
 .post-container .sharing .icon-twitter:hover {
     color: #55acee;
-    transition: color 0.8s ease;
+    transition: color 0.5s ease;
 }
 .post-container .sharing .icon-facebook:hover {
     color: #3b5998;
-    transition: color 0.8s ease;
+    transition: color 0.5s ease;
 }
 .post-container .sharing .icon-google-plus:hover {
     color: #dd4b39;
-    transition: color 0.8s ease;
+    transition: color 0.5s ease;
 } 
 
 .post-container .sharing .icon-weibo:hover {
     color: #E6162D;
-    transition: color 0.8s ease;
+    transition: color 0.5s ease;
 }
 
 .post-container h1,

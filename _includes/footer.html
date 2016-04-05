@@ -8,8 +8,9 @@
                     <li>
                         <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
                             <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-square fa-stack-2x fa-inverse"
+                                style="color:#ddd; font-size:1.9em; padding-top:2px"></i>
+                                <i class="fa fa-rss-square fa-stack-2x"></i>
                             </span>
                         </a>
                     </li>
@@ -18,31 +19,21 @@
                     <li>
                         <a href="https://twitter.com/{{ site.twitter_username }}">
                             <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-square fa-stack-2x fa-inverse"></i>
                                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
                     {% endif %}
 
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
-                    {% if site.zhihu_username %}
-                    <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-stack-1x fa-inverse">知</i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
 
                     {% if site.github_username %}
                     <li>
                         <a target="_blank" href="https://github.com/{{ site.github_username }}">
                             <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-square fa-stack-2x fa-inverse"
+                                style="color:#ddd; font-size:1.9em; padding-top:2px"></i>
+                                <i class="fa fa-github-square fa-stack-2x"></i>
                             </span>
                         </a>
                     </li>
@@ -52,8 +43,9 @@
                     <li>
                         <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
                             <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-square fa-stack-2x fa-inverse"
+                                style="color:#ddd; font-size:1.9em; padding-top:2px"></i>
+                                <i class="fa fa-facebook-square fa-stack-2x"></i>
                             </span>
                         </a>
                     </li>
@@ -63,8 +55,10 @@
                     <li>
                         <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
                             <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+
+                                <i class="fa fa-square fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse" 
+                                style="font-size: 1.3em;color:#ddd;"></i>
                             </span>
                         </a>
                     </li>
