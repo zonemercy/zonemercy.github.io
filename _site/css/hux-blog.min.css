@@ -158,7 +158,7 @@ pre code {
 }
 
 .post-container p a:hover{
-  background-color:#f9f2f4;
+  background-color: rgba(238, 238, 238, 0.5);
 }
 
 /*achorjs css*/
@@ -366,11 +366,11 @@ pre code {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 20px;
-  font-weight: 800;
+  font-weight: 200;          /*   nav li a font-weight  */
   letter-spacing: 1px;
 }
 .navbar-custom .nav li a:active {
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.8);
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -391,7 +391,9 @@ pre code {
   }
   .navbar-custom .nav li a {
     color: white;
-    padding: 10px;
+    padding: 20px;
+    padding-bottom: 10px;
+    /*padding-left: 10px;*/
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
@@ -401,7 +403,7 @@ pre code {
     background: none;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
@@ -419,11 +421,11 @@ pre code {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
-    background-color: rgba(255, 255, 255, 0.4);
-    /*border-bottom: 1px solid #f2f2f2;*/
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
+    background-color: rgba(238, 238, 238, 0.85);
+    border-bottom: 1px solid #eee;
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    transition: transform 0.2s;
   }
   .navbar-custom.is-fixed .navbar-brand {
     color: #404040;
@@ -438,7 +440,50 @@ pre code {
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
     color: #4C72B0;
+    /*text-decoration: underline;*/
   }
+  .navbar-custom.is-fixed:hover{background-color: rgba(235, 235, 235, 1);}
+/*  .navbar-custom.is-fixed .nav li a:hover::before,
+  .navbar-custom.is-fixed .nav li a:hover::after {position: absolute; }
+  .navbar-custom.is-fixed .nav li a:hover::before { content: "\5B"; left:10px; }
+  .navbar-custom.is-fixed .nav li a:hover::after { content: "\5D"; right:10px; }*/
+
+  .navbar-custom.is-fixed .nav li a::before,
+  .navbar-custom.is-fixed .nav li a::after {  
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+  }
+
+  .navbar-custom.is-fixed .nav li a::before{
+    margin-right: 5px;
+    content: '[';
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    transform: translateX(10px);   
+  }
+
+  .navbar-custom.is-fixed .nav li a::after{
+    margin-left: 5px;
+    content: ']';
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    transform: translateX(-10px);   
+  }
+  .navbar-custom.is-fixed .nav li a:hover::before,
+  .navbar-custom.is-fixed .nav li a:hover::after,
+  .navbar-custom.is-fixed .nav li a:focus::before,
+  .navbar-custom.is-fixed .nav li a:focus::after { 
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px); 
+  }
+
+
+
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
     -webkit-transform: translate3d(0, 100%, 0);
@@ -990,7 +1035,7 @@ img::-moz-selection {
   padding: 19px 16px;
   margin-top: 2px;
   margin-right: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
   border-radius: 50%;
 }
 .navbar-default .navbar-toggle .icon-bar {
