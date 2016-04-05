@@ -392,8 +392,6 @@ pre code {
   .navbar-custom .nav li a {
     color: white;
     padding: 20px;
-    padding-bottom: 10px;
-    /*padding-left: 10px;*/
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
@@ -435,6 +433,8 @@ pre code {
     color: #4C72B0;
   }
   .navbar-custom.is-fixed .nav li a {
+    padding-left: 10px;
+    padding-bottom: 10px;
     color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
@@ -458,16 +458,16 @@ pre code {
   }
 
   .navbar-custom.is-fixed .nav li a::before{
-    margin-right: 5px;
-    content: '[';
+    margin-right: 4px;
+    content: '「';
     -webkit-transform: translateX(10px);
     -moz-transform: translateX(10px);
     transform: translateX(10px);   
   }
 
   .navbar-custom.is-fixed .nav li a::after{
-    margin-left: 5px;
-    content: ']';
+    margin-left: 4px;
+    content: '」';
     -webkit-transform: translateX(-10px);
     -moz-transform: translateX(-10px);
     transform: translateX(-10px);   
