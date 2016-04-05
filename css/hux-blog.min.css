@@ -392,6 +392,8 @@ pre code {
   .navbar-custom .nav li a {
     color: white;
     padding: 20px;
+    padding-left: 0px;
+    /*padding-right: 0px;*/
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
@@ -400,6 +402,42 @@ pre code {
   .navbar-custom .nav li a:active {
     background: none;
   }
+
+  .navbar-custom .nav li a::before,
+  .navbar-custom .nav li a::after {  
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+  }
+
+  .navbar-custom .nav li a::before{
+    margin-right: 5px;
+    content: '「';
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    transform: translateX(10px);   
+  }
+
+  .navbar-custom .nav li a::after{
+    margin-left: 5px;
+    content: '」';
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    transform: translateX(-10px);   
+  }
+  .navbar-custom .nav li a:hover::before,
+  .navbar-custom .nav li a:hover::after,
+  .navbar-custom .nav li a:focus::before,
+  .navbar-custom .nav li a:focus::after { 
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px); 
+  }  
+
+
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -433,7 +471,8 @@ pre code {
     color: #4C72B0;
   }
   .navbar-custom.is-fixed .nav li a {
-    padding-left: 10px;
+    padding-left: 0px;
+    /*padding-right: 5px;*/
     padding-bottom: 10px;
     color: #404040;
   }
@@ -443,10 +482,6 @@ pre code {
     /*text-decoration: underline;*/
   }
   .navbar-custom.is-fixed:hover{background-color: rgba(235, 235, 235, 1);}
-/*  .navbar-custom.is-fixed .nav li a:hover::before,
-  .navbar-custom.is-fixed .nav li a:hover::after {position: absolute; }
-  .navbar-custom.is-fixed .nav li a:hover::before { content: "\5B"; left:10px; }
-  .navbar-custom.is-fixed .nav li a:hover::after { content: "\5D"; right:10px; }*/
 
   .navbar-custom.is-fixed .nav li a::before,
   .navbar-custom.is-fixed .nav li a::after {  
