@@ -697,6 +697,7 @@ pre code {
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   color: #a3a3a3;
   font-size: 13px;
+  text-transform: uppercase;
   /*font-weight: 200;*/
   /*font-style: italic;*/
   margin-top: 20px;
@@ -705,6 +706,7 @@ pre code {
   text-decoration: none;
   color: #a3a3a3;
   margin-left: 5px;
+  text-transform: none;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
