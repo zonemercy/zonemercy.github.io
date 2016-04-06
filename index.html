@@ -20,13 +20,26 @@ description: "若得心头无闲事 才是人生好时节"
         </div>
     
     <p class="post-meta">
-        Posted on {{ post.date | date: "%B %-d, %Y" }}
+        Posted on {{ post.date | date: "%B %-d, %Y" }}  |  
+            {% for tag in post.tags %}
+            <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}  
+            </a>
+            {%endfor%}
     </p>
+
 </div>
 <hr>
 {% endfor %}
-
-<!-- Pager -->
+<!--                     <div class="tags">
+                        {% for tag in site.tags %}
+                            {% if tag[1].size > {{site.featured-condition-size}} %}
+                                <a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                                    {{ tag[0] }}
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+ --><!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
