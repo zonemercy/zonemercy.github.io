@@ -76,7 +76,7 @@ layout: default
             {% endfor %}
 
             <div class="sharing">    
-                <i style="margin-right: 15px; animation-duration: 8s;" class="fa fa-share-alt fa-lg fa-spin"></i>
+                <i style="margin-right: 15px; margin-left: 10px; animation-duration: 8s;" class="fa fa-share-alt fa-lg fa-spin"></i>
                 <a class="icon-twitter" style="margin-right:5px" href="https://twitter.com/intent/tweet?text={{ page.title }}&url=http://{{ site.url }}{{ page.url }}&via=zonemercy&hashtags={{ tagStr }}" rel="nofollow" target="_blank" title="Share on Twitter">
                 <i class="fa fa-twitter-square fa-lg"></i></a>
                 <a class="icon-facebook"style="margin-right:5px" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
@@ -86,8 +86,6 @@ layout: default
                 <a class="icon-weibo" href="http://v.t.sina.com.cn/share/share.php?title=%40zonemercy+发表了新博文：{{ page.title }} -- {{ page.subtitle }}&url=http://{{ site.url }}{{ page.url }}" target="_blank" title="Share this post on Sina Weibo">
                 <i class="fa fa-weibo fa-lg"></i></a>
             </div>
-
-            <hr>
 
 
                 <ul class="pager">
@@ -183,7 +181,6 @@ s.setAttribute('data-timestamp', +new Date());
           icon: '#'
         };
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-        // anchors.add('h1').add('h2').add('h3');
     })
 </script>
 <style>
