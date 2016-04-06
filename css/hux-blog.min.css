@@ -675,6 +675,7 @@ pre code {
 .post-preview > a:focus {
   text-decoration: none;
   color: #0085a1;
+  /*color: #698EBF;*/
 }
 .post-preview > a > .post-title {
   font-family: "Raleway", sans-serif;
@@ -694,15 +695,16 @@ pre code {
 }
 .post-preview > .post-meta {
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  color: #808080;
+  color: #a3a3a3;
   font-size: 13px;
-  /*font-weight: lighter;*/
+  /*font-weight: 200;*/
   /*font-style: italic;*/
-  margin-top: 0;
+  margin-top: 20px;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #a3a3a3;
+  margin-left: 5px;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {

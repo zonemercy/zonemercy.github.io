@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar"
-subtitle: "小李子的故事"
+subtitle: "How to make a prediction on best actor of oscar 2016 based on machine learning?"
 header-img: "img/cat1.jpg"
 header-mask: "0.6"
 description: ""
