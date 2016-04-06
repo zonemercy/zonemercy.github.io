@@ -10,6 +10,7 @@ tags:
     - python
     - data science
     - oscar
+    - machine learning
 ---
 
 # 小李子的故事 
