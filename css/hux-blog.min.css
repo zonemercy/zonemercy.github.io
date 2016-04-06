@@ -93,9 +93,11 @@ a:focus {
   /*color: #4C72B0;*/
   color: #00879F;
   color: #0f4d92;
-  /*color: #6082b6;*/
+  color: #6082b6;
   /*air force blue*/
   /*color: #5d8aa8; */
+  /*蓝*/
+  color: #0D5661;
 }
 a img:hover,
 a img:focus {
@@ -164,7 +166,7 @@ pre code {
 }
 
 .post-container p a:hover{
-  background-color: rgba(238, 238, 238, 0.5);
+  background-color: #f8f8ff;
 }
 
 /*achorjs css*/
@@ -175,7 +177,7 @@ pre code {
   color: #4C72B0;
 }
 *:hover > .anchorjs-link {
-  transition: color 0.4s; 
+  transition: color 0.3s; 
 }
 
 
@@ -184,20 +186,20 @@ pre code {
 }
 .post-container .sharing .icon-twitter:hover {
     color: #55acee;
-    transition: color 0.5s ease;
+    transition: color 0.3s ease;
 }
 .post-container .sharing .icon-facebook:hover {
     color: #3b5998;
-    transition: color 0.5s ease;
+    transition: color 0.3s ease;
 }
 .post-container .sharing .icon-google-plus:hover {
     color: #dd4b39;
-    transition: color 0.5s ease;
+    transition: color 0.3s ease;
 } 
 
 .post-container .sharing .icon-weibo:hover {
     color: #E6162D;
-    transition: color 0.5s ease;
+    transition: color 0.3s ease;
 }
 
 .post-container h1,
