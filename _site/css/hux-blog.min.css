@@ -724,8 +724,9 @@ pre code {
   /*font-weight: 200;*/
   margin-top: 30px;
   white-space:nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
 }
-/*.post-preview > .post-meta  > time {text-align: center;}*/
 .post-preview > .post-meta  > span {
     display: inline-block;
     margin-left: 15px;
