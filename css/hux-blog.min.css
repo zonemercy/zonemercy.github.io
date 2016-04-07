@@ -734,9 +734,13 @@ pre code {
     border-left: #E1E1E1 1.2px solid;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
+  .post-preview > .post-meta {
+    white-space: normal;
+  }
   .post-preview > .post-meta  > span {
-    width: 70%;
+    margin-left: 5px;
+    padding-left: 10px;
   }
 }
 
