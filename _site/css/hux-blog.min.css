@@ -95,7 +95,7 @@ a:focus {
 
   /*air force blue*/
   /*color: #5d8aa8; */
-  
+
   /*color: #5a5a5a;*/
 }
 a img:hover,
@@ -636,12 +636,9 @@ pre code {
   margin-top: -5px;
 }
 .intro-header .post-heading .meta {
-  /*font-family: 'Lora', 'Times New Roman', serif;*/
-  /*font-style: italic;*/
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  font-weight: 300;
   font-size: 14px; 
-  color: #808080;
+  color: #9B9B9B;
   font-weight: lighter;
   margin-top: 0;
 
@@ -783,8 +780,10 @@ pre code {
 }
 .post-content-preview {
   font-size: 13px;
-  font-style: italic;
+  /*font-style: italic;*/
   color: #808080;
+  margin-top: 30px;
+  line-height: 1.5;
 }
 
 @media only screen and (min-width: 768px) {
