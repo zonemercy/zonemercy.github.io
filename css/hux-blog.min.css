@@ -736,7 +736,7 @@ pre code {
 
 @media only screen and (max-width: 768px) {
   .post-preview > .post-meta  > span {
-    width: 80%;
+    width: 70%;
   }
 }
 
