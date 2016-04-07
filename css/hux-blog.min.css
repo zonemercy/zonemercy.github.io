@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,100,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,200,100,700);
 /*@import url(http://fonts.googleapis.com/css?family=Raleway:100);*/
 
 
@@ -644,7 +644,6 @@ pre code {
   font-size: 14px; 
   color: #808080;
   font-weight: lighter;
-  /*font-style: italic;*/
   margin-top: 0;
 
 }
@@ -689,8 +688,11 @@ pre code {
 
 @media (max-width: 480px){
 .post-preview > a > .post-title {
-    font-size: 12px;
+    font-size: 30px;
   }
+/*.post-preview > .post-meta > time {
+  vertical-align: top;  
+  }*/
 } 
 
 .post-preview > a > .post-subtitle {
@@ -715,18 +717,26 @@ pre code {
 }*/
 .post-preview > .post-meta {
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  display: inline-block;
   color: #a3a3a3;
   font-size: 12px;
   text-transform: uppercase;
   /*font-weight: 200;*/
   margin-top: 30px;
+  white-space:nowrap;
 }
-
+/*.post-preview > .post-meta  > time {text-align: center;}*/
 .post-preview > .post-meta  > span {
     display: inline-block;
     margin-left: 15px;
     padding-left: 15px;
     border-left: #E1E1E1 1.2px solid;
+}
+
+@media only screen and (max-width: 768px) {
+  .post-preview > .post-meta  > span {
+    width: 80%;
+  }
 }
 
 .post-preview > .post-meta  > span > a {
@@ -735,6 +745,7 @@ pre code {
   color: #a3a3a3;
   margin-right: 8px;
   text-transform: none;
+  white-space:normal;
 }
 .post-preview > .post-meta > span > a:hover,
 .post-preview > .post-meta > span > a:focus {
