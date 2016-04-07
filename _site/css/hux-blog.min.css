@@ -89,15 +89,14 @@ a {
 }
 a:hover,
 a:focus {
-  /*color: #808080;*/
-  /*color: #4C72B0;*/
-  color: #00879F;
-  color: #0f4d92;
-  color: #6082b6;
+  color: #4C72B0;
+  /*color: #00879F;*/
+  /*color: #6082b6;*/
+
   /*air force blue*/
   /*color: #5d8aa8; */
-  /*蓝*/
-  color: #0D5661;
+  
+  /*color: #5a5a5a;*/
 }
 a img:hover,
 a img:focus {
@@ -845,7 +844,7 @@ footer .copyright a {
 }
 footer .copyright a:hover,
 footer .copyright a:focus {
-  color: #0085a1;
+  color: #005CAF;
 }
 .floating-label-form-group {
   font-size: 14px;
