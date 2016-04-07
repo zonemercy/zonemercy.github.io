@@ -711,10 +711,6 @@ pre code {
   -webkit-transform: translateY(-4px);
   -moz-transform: translateY(-4px);
   transform: translateY(-4px);
-/*  -webkit-transform: translate(1px, -4px);
-  -moz-transform: translate(1px, -4px);
-  transform: translate(1px, -4px);*/
-  /*font-family: 'Raleway Dots', cursive;*/
 }
 /*.post-preview > a:hover .post-title {
     font-weight:300;
@@ -783,7 +779,7 @@ pre code {
   /*font-style: italic;*/
   color: #808080;
   margin-top: 30px;
-  line-height: 1.5;
+line-height: 1.5;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1041,7 +1037,8 @@ img::-moz-selection {
 #tag_cloud .tag:hover,
 #tag_cloud a:active,
 #tag_cloud .tag:active {
-  background-color: #0085a1 !important;
+  background-color: #4C72B0 !important;
+  transition: 0.3s ease;
 }
 @media only screen and (min-width: 768px) {
   #tag_cloud {
@@ -1060,7 +1057,7 @@ img::-moz-selection {
   margin-top: 0px;
 }
 .listing-seperator {
-  color: #0085a1;
+  color: #4C72B0;
   font-size: 21px !important;
 }
 .listing-seperator::before {
@@ -1073,20 +1070,17 @@ img::-moz-selection {
   }
 }
 .one-tag-list .tag-text {
-  font-weight: 200;
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
+  font-weight: bolder;
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
+  color: #4A4A4A;
 }
 .one-tag-list .post-preview {
   position: relative;
 }
 .one-tag-list .post-preview > a .post-title {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: normal;
   margin-top: 20px;
 }
 .one-tag-list .post-preview > a .post-subtitle {
