@@ -89,6 +89,7 @@ a {
 }
 a:hover,
 a:focus {
+  transition: 0.2s ease;
   color: #4C72B0;
   /*color: #00879F;*/
   /*color: #6082b6;*/
@@ -562,14 +563,14 @@ pre code {
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 85px 0 55px;
+  padding: 80px 0 50px;
   color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 130px 0 110px;
   }
 }
 .intro-header .site-heading {
@@ -628,19 +629,18 @@ pre code {
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
   font-family: "Raleway", -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  line-height: 1.7;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.3;
   font-weight: normal;
   margin: 10px 0 30px;
-  margin-top: -5px;
 }
 .intro-header .post-heading .meta {
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  font-size: 14px; 
+  font-size: 12px; 
   color: #9B9B9B;
-  font-weight: lighter;
-  margin-top: 0;
+  /*font-weight: lighter;*/
+  margin-top: 10px;
+  margin-left: 5px;
 
 }
 .intro-header .post-heading .meta a {
@@ -658,9 +658,6 @@ pre code {
   }
   .intro-header .post-heading .subheading {
     font-size: 30px;
-  }
-  .intro-header .post-heading .meta {
-    font-size: 15px;
   }
 }
 .post-preview > a {
@@ -933,7 +930,7 @@ form .row:first-child .floating-label-form-group {
   letter-spacing: 1px;
   padding: 10px;
   background-color: white;
-  border-radius: 0;
+  border-radius: 10px;
 }
 @media only screen and (min-width: 768px) {
   .pager li > a,
@@ -948,8 +945,9 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: rgba(0, 92, 175, 0.8);
+  border: 1px solid #ddd;
+  transition: 0.5s;
 }
 .pager li > a:hover > span,
 .pager li > a:focus > span {
@@ -988,10 +986,10 @@ img::-moz-selection {
 .tags a,
 .tags .tag {
   display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 999em;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
   padding: 0 10px;
-  color: #ffffff;
+  color: #ddd;
   line-height: 24px;
   font-size: 12px;
   text-decoration: none;
@@ -1003,9 +1001,10 @@ img::-moz-selection {
 .tags a:active,
 .tags .tag:active {
   color: white;
-  border-color: white;
-  background-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 92, 175, 0.4);
   text-decoration: none;
+  transition: 0.2s ease;
 }
 @media only screen and (min-width: 768px) {
   .tags a,
@@ -1022,16 +1021,18 @@ img::-moz-selection {
   }
 }
 #tag_cloud {
-  margin: 20px 0 15px 0;
+  margin: 30px 0 10px 0;
 }
 #tag_cloud a,
 #tag_cloud .tag {
   font-size: 14px;
+  color: white;
   border: none;
   line-height: 28px;
   margin: 0 2px;
   margin-bottom: 8px;
   background: #D6D6D6;
+  font-family: -apple-system, "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 #tag_cloud a:hover,
 #tag_cloud .tag:hover,
@@ -1058,7 +1059,7 @@ img::-moz-selection {
 }
 .listing-seperator {
   color: #4C72B0;
-  font-size: 21px !important;
+  font-size: 24px !important;
 }
 .listing-seperator::before {
   margin-right: 5px;
@@ -1071,20 +1072,22 @@ img::-moz-selection {
 }
 .one-tag-list .tag-text {
   font-weight: bolder;
-  font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   color: #4A4A4A;
 }
+
 .one-tag-list .post-preview {
   position: relative;
 }
 .one-tag-list .post-preview > a .post-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
 }
 .one-tag-list .post-preview > a .post-subtitle {
   font-size: 12px;
+  font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 .one-tag-list .post-preview > .post-meta {
   position: absolute;
@@ -1094,6 +1097,9 @@ img::-moz-selection {
   font-size: 12px;
   line-height: 12px;
 }
+.one-tag-list{
+  margin-top: 30px;
+}
 @media only screen and (min-width: 768px) {
   .one-tag-list .post-preview {
     margin-left: 20px;
@@ -1101,9 +1107,6 @@ img::-moz-selection {
   .one-tag-list .post-preview > a > .post-title {
     font-size: 18px;
     line-height: 1.3;
-  }
-  .one-tag-list .post-preview > a > .post-subtitle {
-    font-size: 14px;
   }
   .one-tag-list .post-preview .post-meta {
     font-size: 14px;
