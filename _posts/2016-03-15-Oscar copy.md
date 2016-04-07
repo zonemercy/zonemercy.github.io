@@ -11,6 +11,8 @@ tags:
     - data science
     - oscar
     - machine learning
+    - scikit-learn
+    - scraping
 ---
 
 # 小李子的故事 

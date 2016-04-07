@@ -689,7 +689,7 @@ pre code {
 
 @media (max-width: 480px){
 .post-preview > a > .post-title {
-    font-size: 36px;
+    font-size: 12px;
   }
 } 
 
