@@ -162,13 +162,13 @@
 				
 				<a href="#python" title="python" rel="3">python</a>
 				
-				<a href="#data science" title="data science" rel="1">data science</a>
+				<a href="#scikit-learn" title="scikit-learn" rel="2">scikit-learn</a>
+				
+				<a href="#data science" title="data science" rel="2">data science</a>
 				
 				<a href="#oscar" title="oscar" rel="1">oscar</a>
 				
 				<a href="#machine learning" title="machine learning" rel="1">machine learning</a>
-				
-				<a href="#scikit-learn" title="scikit-learn" rel="1">scikit-learn</a>
 				
 				<a href="#scraping" title="scraping" rel="1">scraping</a>
 				
@@ -241,6 +241,51 @@
 			</div>
 			
 			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="scikit-learn">
+                    <span class="tag-text">scikit-learn</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2016-03-15">2016-03-15</time>
+				  <a href="/2016/03/15/Oscar-copy/" title="OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar">OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2016/03/15/Oscar-copy/">
+				        <h2 class="post-title">
+                            OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            How to make a prediction on best actor of oscar 2016 based on machine learning?
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2016-03-15</p> -->
+				</div>
+				<hr style="margin-top: 0px; margin-bottom: 30px;">
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2016-03-13">2016-03-13</time>
+				  <a href="/2016/03/13/Stock-Analysis/" title="STOCK IPYTHON">STOCK IPYTHON</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2016/03/13/Stock-Analysis/">
+				        <h2 class="post-title">
+                            STOCK IPYTHON
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            复盘：巴萨进攻手段丰富，枪手出局亦有亮点
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2016-03-13</p> -->
+				</div>
+				<hr style="margin-top: 0px; margin-bottom: 30px;">
+				
+			</div>
+			
+			<div class="one-tag-list">
 			  	<span class="fa fa-tag listing-seperator" id="data science">
                     <span class="tag-text">data science</span>
                 </span>
@@ -261,6 +306,25 @@
 				        
 				    </a>
 				    <!-- <p class="post-meta">2016-03-15</p> -->
+				</div>
+				<hr style="margin-top: 0px; margin-bottom: 30px;">
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2016-03-13">2016-03-13</time>
+				  <a href="/2016/03/13/Stock-Analysis/" title="STOCK IPYTHON">STOCK IPYTHON</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2016/03/13/Stock-Analysis/">
+				        <h2 class="post-title">
+                            STOCK IPYTHON
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            复盘：巴萨进攻手段丰富，枪手出局亦有亮点
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2016-03-13</p> -->
 				</div>
 				<hr style="margin-top: 0px; margin-bottom: 30px;">
 				
@@ -295,32 +359,6 @@
 			<div class="one-tag-list">
 			  	<span class="fa fa-tag listing-seperator" id="machine learning">
                     <span class="tag-text">machine learning</span>
-                </span>
-				
-				  <!-- <li class="listing-item">
-				  <time datetime="2016-03-15">2016-03-15</time>
-				  <a href="/2016/03/15/Oscar-copy/" title="OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar">OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar</a>
-				  </li> -->
-				 <div class="post-preview">
-				    <a href="/2016/03/15/Oscar-copy/">
-				        <h2 class="post-title">
-                            OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar
-				        </h2>
-				        
-				        <h3 class="post-subtitle">
-				            How to make a prediction on best actor of oscar 2016 based on machine learning?
-				        </h3>
-				        
-				    </a>
-				    <!-- <p class="post-meta">2016-03-15</p> -->
-				</div>
-				<hr style="margin-top: 0px; margin-bottom: 30px;">
-				
-			</div>
-			
-			<div class="one-tag-list">
-			  	<span class="fa fa-tag listing-seperator" id="scikit-learn">
-                    <span class="tag-text">scikit-learn</span>
                 </span>
 				
 				  <!-- <li class="listing-item">
@@ -474,53 +512,40 @@
     }
 </script>
 
-<!-- Highlight.js 
+ <!-- tag cloud color  -->
 <script>
-    async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
-        hljs.initHighlightingOnLoad();
-    })
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
         async("/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
+                // size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#D6D6D6', end: '#585F6B'}, //'#5C82C0'
             };
             $('#tag_cloud a').tagcloud();
         })
     }
 </script>
-<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">-->
 
 <!--fastClick.js -->
+<!-- FastClick.attach(document.body); -->
 <script>
     async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
-        // var $nav = document.querySelector("nav");
-        // if($nav) FastClick.attach($nav);
-
-        // global FastClick!!
-        FastClick.attach(document.body);    
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
     })
 </script>
 
-
 <!-- Google Analytics -->
-
 <script>
-    // dynamic User by Hux
-    var _gaId = 'UA-49627206-1';
-    var _gaDomain = 'zonemercy.github.io';
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    // Originial
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-76156557-1', 'auto');
+  ga('send', 'pageview');
 
-    ga('create', _gaId, _gaDomain);
-    ga('send', 'pageview');
 </script>
-
 
 <!-- Side Catalog -->
 

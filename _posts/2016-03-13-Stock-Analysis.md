@@ -5,7 +5,10 @@ comments: true
 subtitle: "复盘：巴萨进攻手段丰富，枪手出局亦有亮点"
 description: ""
 catalog: true
-tags: [python]
+tags: 
+    - python
+    - scikit-learn
+    - data science
 header-img: "img/home-bg.jpg"
 header-mask: "0.2"
 ---
