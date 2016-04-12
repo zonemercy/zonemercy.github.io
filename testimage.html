@@ -5,13 +5,13 @@ imgfolder: /images
 images:
   - name: appt1656.jpg
     thumb: appt1656.jpg
-    text: The first image
+    text: The first image 其实我就想试一下,如果描述文字很长的段落会是什么样的效果.是不是内嵌的字体更有明信片的感觉呢?其实我就想试一下,如果描述文字很长的段落会是什么样的效果.是不是内嵌的字体更有明信片的感觉呢? The first image 其实我就想试一下,如果描述文字很长的段落会是什么样的效果.是不是内嵌的字体更有明信片的感觉呢?其实我就想试一下,如果描述文字很长的段落会是什么样的效果.是不是内嵌的字体更有明信片的感觉呢?
   - name: cat1.jpg
     thumb: cat1.jpg
     text: The second image
 ---
 
-<link rel="stylesheet" href="../css/lightbox.min.css">
+
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
         <div class="row">
@@ -24,6 +24,8 @@ images:
     </div>
 </header>
 
+<link rel="stylesheet" href="../css/lightbox.min.css">
+
   <section>
     <div class="container">
 <!--     <h3>Two Individual Images</h3>
@@ -35,16 +37,19 @@ images:
     <hr /> -->
 
     <h3>A Four Image Set</h3>
-    <div>
+    
       {% for image in page.images %}
-        <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="example-set" title="{{ image.text }}"><img src="{{ page.imgfolder }}/{{ image.thumb }}" title="{{ image.text }}"></a>
+      <div style="width:30vw; height:30vw;display: inline-block;">
+        <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="example-set" title="{{ image.text }}" style="width:30vw; height:30vw;display: inline-block;background-image:url('{{ page.imgfolder }}/{{ image.thumb }}');    background-position: center;
+    background-size: contain;
+    background-color: #ccc;"></a>
+      </div>
       {% endfor %}
 
       <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
       <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
       <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
       <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
-    </div>
   </div>
   </section>
 
