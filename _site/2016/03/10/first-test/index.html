@@ -545,9 +545,8 @@ plt.axvline(x=start_price, linewidth=3,color=’.6’,alpha=.6)</p>
                  </div>
 
 
-
             </div>
-                    
+<!--                     
             <div class="
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
@@ -561,7 +560,7 @@ plt.axvline(x=start_price, linewidth=3,color=’.6’,alpha=.6)</p>
                     <ul class="catalog-body"></ul>
                 </div>
             </div>
-        
+         -->
 
         </div>
     </div>
@@ -716,6 +715,28 @@ s.setAttribute('data-timestamp', +new Date());
 <!-- Custom Theme JavaScript -->
 <script src="/js/hux-blog.min.js "></script>
 <script src="/js/lightbox.js "></script>
+
+
+<script>
+$(document).ready(function(){
+    setContainerWidth();
+});
+
+$(window).resize(function(){
+   setContainerWidth();
+});
+
+function setContainerWidth()
+{
+    $('.imagegrid').css('width', 'auto'); //reset
+    // var windowWidth = $(document).width();
+    var windowWidth = $('.imagegrid').width();
+    var blockWidth = $('.imageblock').outerWidth(true);
+    var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
+    $('.imagegrid').width(maxBoxPerRow * (blockWidth+5));
+}
+</script>
+
 
 <!-- async load function -->
 <script>

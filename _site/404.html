@@ -248,6 +248,28 @@
 <script src="/js/hux-blog.min.js "></script>
 <script src="/js/lightbox.js "></script>
 
+
+<script>
+$(document).ready(function(){
+    setContainerWidth();
+});
+
+$(window).resize(function(){
+   setContainerWidth();
+});
+
+function setContainerWidth()
+{
+    $('.imagegrid').css('width', 'auto'); //reset
+    // var windowWidth = $(document).width();
+    var windowWidth = $('.imagegrid').width();
+    var blockWidth = $('.imageblock').outerWidth(true);
+    var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
+    $('.imagegrid').width(maxBoxPerRow * (blockWidth+5));
+}
+</script>
+
+
 <!-- async load function -->
 <script>
     function async(u, c) {
