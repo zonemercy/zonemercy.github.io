@@ -159,26 +159,23 @@
       .imagegrid{
         text-align:right;
         margin: auto;
-        padding: auto;
         max-width:960px;
-        width: 960px;
+        /*width: 960px;*/
       }
       .imageblock{
         display: inline-block; 
-        /*margin-right: 10px;*/
-
+        margin: 5px;
       }
       .imageblock a{
         width:100vw; 
         height:100vw; 
-        max-width:200px; 
-        max-height:200px; 
+        max-width:300px; 
+        max-height:300px; 
         display: inline-block; 
         background-position: center;
         background-size: cover;
         background-color: #ccc; 
       }
-
 </style>
 
 <link rel="stylesheet" href="../css/lightbox.min.css">
@@ -337,10 +334,17 @@ function setContainerWidth()
 {
     $('.imagegrid').css('width', 'auto'); //reset
     // var windowWidth = $(document).width();
-    var windowWidth = $('.imagegrid').width();
-    var blockWidth = $('.imageblock').outerWidth(true);
-    var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
-    $('.imagegrid').width(maxBoxPerRow * (blockWidth+5));
+
+    if ($(document).width()>480) {
+        var windowWidth = $('.imagegrid').width();
+        var blockWidth = $('.imageblock').outerWidth(true);
+        var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
+        $('.imagegrid').width(maxBoxPerRow * (blockWidth+5));
+    } else {
+        var $bbl = $('.imageblock');
+        $bbl.find('a').css('max-width', 'none');
+        // $('a', $bl).css('max-height', 'auto');
+    }
 }
 </script>
 

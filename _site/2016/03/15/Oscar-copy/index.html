@@ -459,10 +459,17 @@ function setContainerWidth()
 {
     $('.imagegrid').css('width', 'auto'); //reset
     // var windowWidth = $(document).width();
-    var windowWidth = $('.imagegrid').width();
-    var blockWidth = $('.imageblock').outerWidth(true);
-    var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
-    $('.imagegrid').width(maxBoxPerRow * (blockWidth+5));
+
+    if ($(document).width()>480) {
+        var windowWidth = $('.imagegrid').width();
+        var blockWidth = $('.imageblock').outerWidth(true);
+        var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
+        $('.imagegrid').width(maxBoxPerRow * (blockWidth+5));
+    } else {
+        var $bbl = $('.imageblock');
+        $bbl.find('a').css('max-width', 'none');
+        // $('a', $bl).css('max-height', 'auto');
+    }
 }
 </script>
 
