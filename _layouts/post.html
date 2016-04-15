@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- Image to hack wechat -->
+<!-- Image to wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
@@ -13,13 +13,20 @@ layout: default
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
     }
 
-    footer{
+    footer.intro-footer{
     position: relative;
     background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
     }
 
     {% if page.header-mask %}
-    header.intro-header .header-mask{
+    header.intro-header .header-mask
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0,0,0, {{ page.header-mask }});
+    }
+    footer.intro-footer .footer-mask{
         width: 100%;
         height: 100%;
         position: absolute;

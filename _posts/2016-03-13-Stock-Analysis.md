@@ -10,7 +10,7 @@ tags:
     - scikit-learn
     - data science
 header-img: "img/home-bg.jpg"
-header-mask: "0.2"
+header-mask: "0.1"
 ---
 
 #  APPT 1656 <i class="fa fa-twitter fa-lg"></i>

@@ -77,7 +77,7 @@
                         <a href="/tags/">TAGS</a>
                     </li>
                     <li>
-                        <a href="/testimage/">Photography</a>
+                        <a href="/photography/">Photography</a>
                     </li>
                     <li>
                         <a href="/404/">About</a>
@@ -364,8 +364,11 @@ In this mail... 」
 
 
     <!-- Footer -->
-<footer>
-    <div class="container">
+<footer class="intro-footer">
+
+    <div class="footer-mask"></div>
+
+    <div class="container footer-container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
@@ -430,7 +433,7 @@ In this mail... 」
                     
 
                 </ul>
-                <p class="copyright text-muted">
+                <p class="copyright text-muted"   >
                     Copyright &copy; zonemercy 2016
                     <br>
                 </p>
@@ -461,9 +464,7 @@ $(window).resize(function(){
 
 function setContainerWidth()
 {
-    $('.imagegrid').css('width', 'auto'); //reset
-    // var windowWidth = $(document).width();
-
+    $('.imagegrid').css('width', 'auto');
     if ($(document).width()>480) {
         $('.imageblock').find('a').css({'max-width':'240px', 'max-height':'240px'});
         $('.imageblock').css({'margin':'5px'});
@@ -527,7 +528,7 @@ function setContainerWidth()
 </script>
 
 <!-- Side Catalog -->
-
+<!--  -->
 
 </body>
 

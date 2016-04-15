@@ -6,7 +6,7 @@ subtitle: "some of you must receive a 「Page Build Warning」 email"
 description: ""
 catalog: true
 tags: [python]
-header-img: "img/post-bg-unix-linux1.jpg"
+header-img: "img/post-bg-unix-linux.jpg"
 ---
 
 #  APPT 1656 <i class="fa fa-twitter fa-lg"></i>

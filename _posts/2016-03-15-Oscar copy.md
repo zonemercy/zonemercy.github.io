@@ -3,7 +3,7 @@ layout: post
 title: "OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar"
 subtitle: "How to make a prediction on best actor of oscar 2016 based on machine learning?"
 header-img: "img/cat1.jpg"
-header-mask: "0.6"
+header-mask: "0.4"
 description: ""
 catalog: true
 tags:

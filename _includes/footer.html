@@ -1,6 +1,9 @@
 <!-- Footer -->
-<footer>
-    <div class="container">
+<footer class="intro-footer">
+
+    <div class="footer-mask"></div>
+
+    <div class="container footer-container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
@@ -65,7 +68,7 @@
                     {% endif %}
 
                 </ul>
-                <p class="copyright text-muted">
+                <p class="copyright text-muted"  {% if page.copyright %} style="color:#9B9B9B;" {% endif %} >
                     Copyright &copy; zonemercy {{ site.time | date: '%Y' }}
                     <br>
                 </p>
@@ -96,9 +99,7 @@ $(window).resize(function(){
 
 function setContainerWidth()
 {
-    $('.imagegrid').css('width', 'auto'); //reset
-    // var windowWidth = $(document).width();
-
+    $('.imagegrid').css('width', 'auto');
     if ($(document).width()>480) {
         $('.imageblock').find('a').css({'max-width':'240px', 'max-height':'240px'});
         $('.imageblock').css({'margin':'5px'});
@@ -162,7 +163,7 @@ function setContainerWidth()
 </script>
 
 <!-- Side Catalog -->
-{% if page.catalog %}
+<!-- {% if page.catalog %}
 <script type="text/javascript">
     function generateCatalog (selector) {
         var P = $('div.post-container'),a,n,t,l,i,c;
@@ -202,4 +203,4 @@ function setContainerWidth()
         });
     });
 </script>
-{% endif %}
+{% endif %} -->
