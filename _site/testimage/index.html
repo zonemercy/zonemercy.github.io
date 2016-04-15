@@ -10,7 +10,7 @@
     <meta name="keyword"  content="This is a keyword about zonemercy">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Lightbox - zonemercy Blog</title>
+    <title>Once photographed, the subject becomes part of the past. - zonemercy Blog</title>
 
     <link rel="canonical" href="zonemercy.github.io/testimage/">
 
@@ -147,15 +147,18 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading" id="tag-heading">
-                    <h1>Lightbox</h1>
+                <div class="site-heading" >
+<!--                     <h1 style="font-size:60px; text-align:right;">Once photographed, the subject becomes part of the past.</h1> -->
+                    <h1 style="font-size:60px; text-align:right;">Once photographed</h1>
+                    <h1 style="font-size:60px; text-align:right;">the subject becomes part</h1>
+                    <h1 style="font-size:60px; text-align:right;">of the past</h1>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<style type="text/css">
+<style type="text/css" >
       .imagegrid{
         text-align:right;
         margin: auto;
@@ -176,6 +179,7 @@
         background-size: cover;
         background-color: #ccc; 
       }
+      body {background-color: #555}
 </style>
 
 <link rel="stylesheet" href="../css/lightbox.min.css">
@@ -335,7 +339,7 @@ function setContainerWidth()
     // var windowWidth = $(document).width();
 
     if ($(document).width()>480) {
-        $('.imageblock').find('a').css({'max-width':'300px', 'max-height':'300px'});
+        $('.imageblock').find('a').css({'max-width':'25vw', 'max-height':'25vw'});
         $('.imageblock').css({'margin':'5px'});
         var windowWidth = $('.imagegrid').width();
         var blockWidth = $('.imageblock').outerWidth(true);
