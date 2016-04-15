@@ -143,7 +143,7 @@
 </script>
 
 
-    <header class="intro-header" style="background-image: url('/img/post-bg-rwd.jpg')">
+    <header class="intro-header" style="background-color: #555">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -180,7 +180,6 @@
 
 <link rel="stylesheet" href="../css/lightbox.min.css">
 <section style="text-align:center;">
-    <h3>Multi Image Set</h3>
 
     <div class="imagegrid">
      
@@ -336,14 +335,15 @@ function setContainerWidth()
     // var windowWidth = $(document).width();
 
     if ($(document).width()>480) {
+        $('.imageblock').find('a').css({'max-width':'300px', 'max-height':'300px'});
+        $('.imageblock').css({'margin':'5px'});
         var windowWidth = $('.imagegrid').width();
         var blockWidth = $('.imageblock').outerWidth(true);
         var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
         $('.imagegrid').width(maxBoxPerRow * (blockWidth+5));
     } else {
-        var $bbl = $('.imageblock');
-        $bbl.find('a').css('max-width', 'none');
-        // $('a', $bl).css('max-height', 'auto');
+        $('.imageblock').find('a').css({'max-width':'none', 'max-height':'none'});
+        $('.imageblock').css({'margin':'10px 0px 10px 0px'});
     }
 }
 </script>
