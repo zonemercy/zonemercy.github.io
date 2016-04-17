@@ -418,9 +418,9 @@
 
 
     <!-- Footer -->
-<footer class="intro-footer">
+<footer>
 
-    <div class="footer-mask"></div>
+    <!-- <div class="footer-mask"></div> -->
 
     <div class="container footer-container">
         <div class="row">
@@ -528,7 +528,8 @@ function setContainerWidth()
         $('.imagegrid').width(maxBoxPerRow * (blockWidth+5));
     } else {
         $('.imageblock').find('a').css({'max-width':'none', 'max-height':'none'});
-        $('.imageblock').css({'margin':'10px 0px 10px 0px','overflow-y':'scroll','-webkit-scroll-snap-destination':'50% 50%','-webkit-scroll-snap-type':'mandatory'});
+        $('.imageblock').css({'margin':'10px 0px 10px 0px'});
+        // ,'overflow-y':'scroll','-webkit-scroll-snap-destination':'50% 50%','-webkit-scroll-snap-type':'mandatory'
     }
 }
 </script>
