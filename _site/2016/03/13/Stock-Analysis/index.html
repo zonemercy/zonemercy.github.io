@@ -155,8 +155,8 @@
     }
 
     footer.intro-footer{
-    position: relative;
-    background-image: url('/img/home-bg.jpg')
+        position: relative;
+        background-image: url('/img/home-bg.jpg')
     }
 
     
@@ -655,6 +655,212 @@ s.setAttribute('data-timestamp', +new Date());
 
 
 
+    <!-- Footer -->
+<footer class="intro-footer">
+
+    <div class="footer-mask"></div>
+
+    <div class="container footer-container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square fa-stack-2x fa-inverse"
+                                style="color:#ddd; font-size:1.9em;  bottom: 1px;"></i>
+                                <i class="fa fa-rss-square fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+                    <li>
+                        <a href="/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square fa-stack-2x"></i>
+                                <i class="fa fa-envelope-o fa-stack-2x fa-inverse"
+                                style="font-size: 1.2em;color:#ddd;margin-top:20%;"></i>
+                            </span>
+                        </a>
+                    </li>
+
+
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/zonemercy">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square fa-stack-2x fa-inverse"
+                                style="color:#ddd; font-size:1.9em;  padding-top: 2px;"></i>
+                                <i class="fa fa-github-square fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/liu.zongyi.5">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square fa-stack-2x fa-inverse"
+                                style="color:#ddd; font-size:1.9em; padding-top: 2px;"></i>
+                                <i class="fa fa-facebook-square fa-stack-2x"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/p/1005051245975921/home?from=page_100505&mod=TAB&is_all=1#place">
+                            <span class="fa-stack fa-lg">
+
+                                <i class="fa fa-square fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse" 
+                                style="font-size: 1.3em;color:#ddd;"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+                <p class="copyright text-muted"   >
+                    Copyright &copy; zonemercy 2016
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+<script src="/js/lightbox.js "></script>
+
+
+<script>
+$(document).ready(function(){
+    setContainerWidth();
+});
+
+$(window).resize(function(){
+   setContainerWidth();
+});
+
+function setContainerWidth()
+{
+    $('.imagegrid').css('width', 'auto');
+    if ($(document).width()>480) {
+        $('.imageblock').find('a').css({'max-width':'240px', 'max-height':'240px'});
+        $('.imageblock').css({'margin':'5px'});
+        var windowWidth = $('.imagegrid').width();
+        var blockWidth = $('.imageblock').outerWidth(true);
+        var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
+        $('.imagegrid').width(maxBoxPerRow * (blockWidth+5));
+    } else {
+        $('.imageblock').find('a').css({'max-width':'none', 'max-height':'none'});
+        $('.imageblock').css({'margin':'10px 0px 10px 0px','overflow-y':'scroll','-webkit-scroll-snap-destination':'50% 50%','-webkit-scroll-snap-type':'mandatory'});
+    }
+}
+</script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+ <!-- tag cloud color  -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                // size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#D6D6D6', end: '#585F6B'}, //'#5C82C0'
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<!-- FastClick.attach(document.body); -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76156557-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Side Catalog -->
+<!-- 
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+    generateCatalog(".catalog-body");
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+
+
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+ -->
 
 </body>
 
