@@ -583,11 +583,29 @@ pre code {
   padding: 80px 0 50px;
   color: white;
 }
+.image-heading {
+  padding: 40px 0 20px;
+  text-align: center;
+}
+.image-heading h1{
+  font-family: "Raleway", sans-serif;
+  font-weight: 100 !important;
+  font-size: 6vw;
+  color: #999;
+}
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
     padding: 130px 0 110px;
+  }
+  .image-heading {
+    padding: 80px 0 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .image-heading h1{
+    font-size: 72px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -595,10 +613,12 @@ pre code {
   .intro-header .page-heading {
     padding: 40px 0 20px;
   }
+  .image-heading h1{
+    font-size: 30px;
+    text-align: right;
+  }
 }
-/*.intro-header .site-heading {
-  padding: 150px 0;
-}*/
+
 
 .intro-header .site-heading,
 .intro-header .page-heading {
