@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "STOCK IPYTHON"
+title: "Stock Trading Ipython Notebook"
 comments: true
 subtitle: "Stock trading analysis practise notebook"
 header-img: "img/stock-header.jpg"
