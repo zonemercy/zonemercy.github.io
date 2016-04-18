@@ -14,7 +14,7 @@ tags:
 
 ---
 
-#  APPT 1656 <i class="fa fa-twitter fa-lg"></i>
+##  APPT 1656 <i class="fa fa-twitter fa-lg"></i>
 
 
 
@@ -29,7 +29,6 @@ In this mail, github told us:
 
 So, just edit `_config.yml`, find `highlighter: pygments`, change it to `highlighter: rouge` and the warning will be gone.
 
-![](/img/appt1656.jpg)
 
 ## Boilerplate (beta)
 
