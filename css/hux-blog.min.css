@@ -189,11 +189,15 @@ pre code {
   margin-top: 100px;
 
 }
-
+@media only screen and (max-width: 768px) {
+  .post-container .sharing{
+    margin-top: 50px;
+    }
+}
 
 .post-container .sharing a {
   color: #BBC7CC;
-  transition: color 0.4s ease;
+  transition: color 0.3s ease;
 }
 .post-container .sharing .icon-twitter:hover {
     color: #55acee;
@@ -282,7 +286,7 @@ pre code {
   float: left;
 }
 .post-container .pager li > a {
-  width: 80%;
+  width: 100%;
 }
 .post-container .pager li > a > span {
   color: #808080;
@@ -922,8 +926,9 @@ form .row:first-child .floating-label-form-group {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 10px;
-  background-color: #EEE;
-  border-radius: 8px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  border: 2px solid #eaedee;
 }
 @media only screen and (min-width: 768px) {
   .pager li > a,
@@ -940,7 +945,7 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:focus {
   color: white;
   background-color: rgba(99, 99, 99, 0.8);
-  border: 1px solid #ddd;
+  border: 2px solid #FFF;
   transition: all 0.1s ease-in-out;
 }
 .pager li > a:hover > span,
