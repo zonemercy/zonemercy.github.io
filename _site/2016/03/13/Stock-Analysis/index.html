@@ -145,18 +145,18 @@
 
     <!-- Image to wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+<!-- <img src="/img/stock-header.jpg" width="0" height="0"> -->
 
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('/img/home-bg.jpg')
+        background-image: url('/img/stock-header.jpg')
     }
 
     footer.intro-footer{
         position: relative;
-        background-image: url('/img/home-bg.jpg')
+        background-image: url('/img/stock-header.jpg')
     }
 
     
@@ -165,13 +165,13 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background: rgba(0,0,0, 0.1);
+        background: rgba(0,0,0, 0.5);
     }
     footer.intro-footer .footer-mask{
         width: 100%;
         height: 100%;
         position: absolute;
-        background: rgba(0,0,0, 0.1);
+        background: rgba(0,0,0, 0.5);
     }
     
 </style>
@@ -185,15 +185,17 @@
                     <h1>STOCK IPYTHON</h1>
 
                     
-                    <h2 class="subheading">复盘：巴萨进攻手段丰富，枪手出局亦有亮点</h2>
+                    <h2 class="subheading">Stock trading analysis practise notebook</h2>
                     
                     <div class="tags">
                         
                         <a class="tag" href="/tags/#python" title="#python">python</a>
                         
-                        <a class="tag" href="/tags/#scikit-learn" title="#scikit-learn">scikit-learn</a>
+                        <a class="tag" href="/tags/#stock analysis" title="#stock analysis">stock analysis</a>
                         
                         <a class="tag" href="/tags/#data science" title="#data science">data science</a>
+                        
+                        <a class="tag" href="/tags/#scikit-learn" title="#scikit-learn">scikit-learn</a>
                         
                     </div>
 
@@ -238,8 +240,6 @@
 <p>Want to clone a boilerplate instead of my buzz blog? Here comes this!</p>
 
 <h3 id="post-test">Post Test</h3>
-
-<p>上周末巴萨在主场表现出了强大的控制力，凭借华丽的进攻6-0大胜赫塔菲。其实在那场比赛中，恩里克便已经考虑到了周中与阿森纳的较量，并做了充足的备战，他让球队丢掉了“挨打-反击”战术，从一开场便抢夺比赛的控制权，通过潮水般的攻势和成功的高位防守吃掉了对手。此役面对阿森纳，巴萨一开场便表明了以我为主、主动出击的态度，如果阿森纳一味防守，那一场一边倒的大屠杀将在所难免。</p>
 
 <hr />
 
@@ -340,13 +340,13 @@ s.head()
 s['Adj Close'].plot(legend=True,figsize=(10,4))
 </code></p>
 
-<p><img src="/assets/image/output_2_1.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_2_1.png" alt="png" /></p>
 
 <p><code class="highlighter-rouge">python
 s['Volume'].plot(legend=True,figsize=(10,4))
 </code></p>
 
-<p><img src="/assets/image/output_3_1.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_3_1.png" alt="png" /></p>
 
 <p><code class="highlighter-rouge">python
 ma_day = [10,20,40]
@@ -356,7 +356,7 @@ for ma in ma_day:
 s[['Adj Close','MA for 10 days','MA for 20 days','MA for 40 days']].plot(subplots=False,figsize=(10,4))
 </code></p>
 
-<p><img src="/assets/image/output_4_1.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_4_1.png" alt="png" /></p>
 
 <p><code class="highlighter-rouge">python
 s['Daily Return']=s['Adj Close'].pct_change()
@@ -371,7 +371,7 @@ print s['Daily Return'].std()
 </code></pre>
 </div>
 
-<p><img src="/assets/image/output_5_1.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_5_1.png" alt="png" /></p>
 
 <p><code class="highlighter-rouge">python
 sns.plt.xlim(-0.1,0.1)
@@ -381,27 +381,27 @@ sns.distplot(s['Daily Return'].dropna(),color='0.2',bins=40,
 # sns.kdeplot(s['Daily Return'].dropna())
 </code></p>
 
-<p><img src="/assets/image/output_6_1.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_6_1.png" alt="png" /></p>
 
 <p><code class="highlighter-rouge">python
 close_df = DataReader(['BABA','EBAY','AMZN','PYPL'],'yahoo',start,end)['Adj Close']
 close_df['AMZN'].plot()
 </code></p>
 
-<p><img src="/assets/image/output_7_1.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_7_1.png" alt="png" /></p>
 
 <p><code class="highlighter-rouge">python
 pct_df = close_df.pct_change()
 sns.jointplot('EBAY','PYPL',pct_df,kind='scatter',joint_kws={'alpha':0.6})
 </code></p>
 
-<p><img src="/assets/image/output_8_1.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_8_1.png" alt="png" /></p>
 
 <p><code class="highlighter-rouge">python
 sns.pairplot(pct_df.dropna())
 </code></p>
 
-<p><img src="/assets/image/output_9_1.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_9_1.png" alt="png" /></p>
 
 <p><code class="highlighter-rouge">python
 close_df1 = DataReader(['BABA','EBAY','AMZN','YHOO','WMT'],'yahoo',start,end)['Adj Close']
@@ -413,7 +413,7 @@ with sns.axes_style('darkgrid'):
                  n=7,as_cmap=True))   
 </code></p>
 
-<p><img src="/assets/image/output_10_0.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_10_0.png" alt="png" /></p>
 
 <p>```python
 risk_df = pct_df1</p>
@@ -437,7 +437,7 @@ plt.legend(loc=1)</p>
         rad=-0.1’))
 ```</p>
 
-<p><img src="/assets/image/output_11_0.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_11_0.png" alt="png" /></p>
 
 <p><code class="highlighter-rouge">python
 risk_df['BABA'].quantile(0.05)
@@ -478,7 +478,7 @@ plt.ylabel(“Price”)
 plt.title(‘Alibaba based on Monte Carlo Simulation’)
 ```</p>
 
-<p><img src="/assets/image/output_13_1.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_13_1.png" alt="png" /></p>
 
 <p>```python
 # Set a large numebr of runs
@@ -523,7 +523,7 @@ plt.axvline(x=start_price, linewidth=3,color=’.6’,alpha=.6)</p>
 <p>plt.title(u”Final price distribution for Alibaba Stock after %s days” % days, weight=’bold’);
 ```</p>
 
-<p><img src="/assets/image/output_15_0.png" alt="png" /></p>
+<p><img src="/assets/stock1/output_15_0.png" alt="png" /></p>
 
 
 
@@ -535,29 +535,22 @@ plt.axvline(x=start_price, linewidth=3,color=’.6’,alpha=.6)</p>
 
             <div class="sharing">    
                 <i style="margin-right: 15px; margin-left: 10px; animation-duration: 8s;" class="fa fa-share-alt fa-lg fa-spin"></i>
-                <a class="icon-twitter" style="margin-right:5px" href="https://twitter.com/intent/tweet?text=STOCK IPYTHON&url=http://zonemercy.github.io/2016/03/13/Stock-Analysis/&via=zonemercy&hashtags=,python,scikit-learn,data science" rel="nofollow" target="_blank" title="Share on Twitter">
+                <a class="icon-twitter" style="margin-right:5px" href="https://twitter.com/intent/tweet?text=STOCK IPYTHON&url=http://zonemercy.github.io/2016/03/13/Stock-Analysis/&via=zonemercy&hashtags=,python,stock analysis,data science,scikit-learn" rel="nofollow" target="_blank" title="Share on Twitter">
                 <i class="fa fa-twitter-square fa-lg"></i></a>
                 <a class="icon-facebook"style="margin-right:5px" href="https://facebook.com/sharer.php?u=zonemercy.github.io/2016/03/13/Stock-Analysis/" rel="nofollow" target="_blank" title="Share on Facebook">
                 <i class="fa fa-facebook-square fa-lg"></i></a>
                 <a class="icon-google-plus" style="margin-right:5px" href="https://plus.google.com/share?url=http://zonemercy.github.io/2016/03/13/Stock-Analysis/" rel="nofollow" target="_blank" title="Share on Google+">
                 <i class="fa fa-google-plus-square fa-lg"></i></a>  
-                <a class="icon-weibo" href="http://v.t.sina.com.cn/share/share.php?title=%40zonemercy+发表了新博文：STOCK IPYTHON -- 复盘：巴萨进攻手段丰富，枪手出局亦有亮点&url=http://zonemercy.github.io/2016/03/13/Stock-Analysis/" target="_blank" title="Share this post on Sina Weibo">
+                <a class="icon-weibo" href="http://v.t.sina.com.cn/share/share.php?title=%40zonemercy+发表了新博文：STOCK IPYTHON -- Stock trading analysis practise notebook&url=http://zonemercy.github.io/2016/03/13/Stock-Analysis/" target="_blank" title="Share this post on Sina Weibo">
                 <i class="fa fa-weibo fa-lg"></i></a>
             </div>
 
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2016/03/10/FIRST-TEST/" data-toggle="tooltip" data-placement="top" title="WHAT'S FIRST TEST">
-                        Previous<br>
-                        <span>WHAT'S FIRST TEST</span>
-                        </a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2016/03/15/Oscar-copy/" data-toggle="tooltip" data-placement="top" title="OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar">
+                        <a href="/2016/03/15/Oscar-Prediction/" data-toggle="tooltip" data-placement="top" title="OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar">
                         Next<br>
                         <span>OSCAR PREDICTION : Leonardo DiCaprio Will Finally Win an Oscar</span>
                         </a>

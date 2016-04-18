@@ -2,15 +2,16 @@
 layout: post
 title: "STOCK IPYTHON"
 comments: true
-subtitle: "复盘：巴萨进攻手段丰富，枪手出局亦有亮点"
-description: ""
+subtitle: "Stock trading analysis practise notebook"
+header-img: "img/stock-header.jpg"
+header-mask: "0.5"
 catalog: true
 tags: 
     - python
-    - scikit-learn
+    - stock analysis
     - data science
-header-img: "img/home-bg.jpg"
-header-mask: "0.1"
+    - scikit-learn
+
 ---
 
 #  APPT 1656 <i class="fa fa-twitter fa-lg"></i>
@@ -35,8 +36,6 @@ So, just edit `_config.yml`, find `highlighter: pygments`, change it to `highlig
 Want to clone a boilerplate instead of my buzz blog? Here comes this! 
 
 ### Post Test
-
-上周末巴萨在主场表现出了强大的控制力，凭借华丽的进攻6-0大胜赫塔菲。其实在那场比赛中，恩里克便已经考虑到了周中与阿森纳的较量，并做了充足的备战，他让球队丢掉了“挨打-反击”战术，从一开场便抢夺比赛的控制权，通过潮水般的攻势和成功的高位防守吃掉了对手。此役面对阿森纳，巴萨一开场便表明了以我为主、主动出击的态度，如果阿森纳一味防守，那一场一边倒的大屠杀将在所难免。
 
 
 ---
@@ -153,7 +152,7 @@ s['Adj Close'].plot(legend=True,figsize=(10,4))
 
 
 
-![png](/assets/image/output_2_1.png)
+![png](/assets/stock1/output_2_1.png)
 
 
 
@@ -169,7 +168,7 @@ s['Volume'].plot(legend=True,figsize=(10,4))
 
 
 
-![png](/assets/image/output_3_1.png)
+![png](/assets/stock1/output_3_1.png)
 
 
 
@@ -184,7 +183,7 @@ s[['Adj Close','MA for 10 days','MA for 20 days','MA for 40 days']].plot(subplot
 
 
 
-![png](/assets/image/output_4_1.png)
+![png](/assets/stock1/output_4_1.png)
 
 
 
@@ -203,7 +202,7 @@ print s['Daily Return'].std()
 
 
 
-![png](/assets/image/output_5_1.png)
+![png](/assets/stock1/output_5_1.png)
 
 
 
@@ -218,7 +217,7 @@ sns.distplot(s['Daily Return'].dropna(),color='0.2',bins=40,
 
 
 
-![png](/assets/image/output_6_1.png)
+![png](/assets/stock1/output_6_1.png)
 
 
 
@@ -229,7 +228,7 @@ close_df['AMZN'].plot()
 
 
 
-![png](/assets/image/output_7_1.png)
+![png](/assets/stock1/output_7_1.png)
 
 
 
@@ -240,7 +239,7 @@ sns.jointplot('EBAY','PYPL',pct_df,kind='scatter',joint_kws={'alpha':0.6})
 
 
 
-![png](/assets/image/output_8_1.png)
+![png](/assets/stock1/output_8_1.png)
 
 
 
@@ -252,7 +251,7 @@ sns.pairplot(pct_df.dropna())
 
 
 
-![png](/assets/image/output_9_1.png)
+![png](/assets/stock1/output_9_1.png)
 
 
 
@@ -267,7 +266,7 @@ with sns.axes_style('darkgrid'):
 ```
 
 
-![png](/assets/image/output_10_0.png)
+![png](/assets/stock1/output_10_0.png)
 
 
 
@@ -294,7 +293,7 @@ for label, x, y in zip(risk_df.columns, risk_df.mean(), risk_df.std()):
 ```
 
 
-![png](/assets/image/output_11_0.png)
+![png](/assets/stock1/output_11_0.png)
 
 
 
@@ -341,7 +340,7 @@ plt.title('Alibaba based on Monte Carlo Simulation')
 
 
 
-![png](/assets/image/output_13_1.png)
+![png](/assets/stock1/output_13_1.png)
 
 
 
@@ -390,5 +389,5 @@ plt.title(u"Final price distribution for Alibaba Stock after %s days" % days, we
 ```
 
 
-![png](/assets/image/output_15_0.png)
+![png](/assets/stock1/output_15_0.png)
 
