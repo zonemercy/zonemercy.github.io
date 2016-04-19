@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stock Trading Ipython Notebook"
+title: "Stock Trading IPython Notebook"
 comments: true
 subtitle: "Stock trading analysis practise notebook"
 header-img: "img/stock-header.jpg"
@@ -14,7 +14,7 @@ tags:
 
 ---
 
-##  APPT 1656 <i class="fa fa-twitter fa-lg"></i>
+##  Motivation <i class="fa fa-usd"></i> 
 
 
 
