@@ -946,9 +946,10 @@ form .row:first-child .floating-label-form-group {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 10px;
-  background-color: #fafafa;
+  background-color: #f6f8f9;
   border-radius: 15px;
   border: 2px solid #eaedee;
+  transition: all 0.3s ease-in-out;
 }
 @media only screen and (min-width: 768px) {
   .pager li > a,
@@ -959,25 +960,24 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a {
   color: #404040;
-  transition: all 0.3s ease-in-out;
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  color: white;
-  background-color: rgba(99, 99, 99, 0.8);
-  border: 2px solid #FFF;
+  color: #404040;
+  background-color: #fefefe;
+  border: 2px solid #CCD3D7;
   transition: all 0.1s ease-in-out;
 }
 .pager li > a:hover > span,
 .pager li > a:focus > span {
-  color: white;
+  color: #404040;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
   color: #808080;
-  background-color: #404040;
+  /*background-color: #404040;*/
   cursor: not-allowed;
 }
 /*::-moz-selection {
