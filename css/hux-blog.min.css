@@ -163,17 +163,19 @@ pre code {
 .post-container a {
   /*color: #BBC7CC;*/
   color: #4C72B0;
+  transition: none;
 }
 
 .post-container p a:hover{
-  background-color: #f8f8ff;
+  background-color: #EBEBE9;
+  color: #404040;
 }
 
 /*achorjs css*/
 .post-container .anchorjs-link {
   color: #BBC7CC;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.1s;
 }
 .post-container .anchorjs-link:hover {
   color: #4C72B0;
@@ -949,7 +951,7 @@ form .row:first-child .floating-label-form-group {
   background-color: #f6f8f9;
   border-radius: 15px;
   border: 2px solid #eaedee;
-  transition: all 0.3s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 @media only screen and (min-width: 768px) {
   .pager li > a,
@@ -960,6 +962,7 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a {
   color: #404040;
+  transition: all 2s ease-in-out;
 }
 .pager li > a:hover,
 .pager li > a:focus {
