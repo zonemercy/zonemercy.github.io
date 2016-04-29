@@ -693,23 +693,35 @@ pre code {
     font-size: 30px;
   }
 }
+
+
 .post-preview > a {
   color: #404040;
+  -webkit-font-smoothing: antialiased;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
   color: #005CAF;
-  transition: 0.3s ease;
 }
 
-.post-preview > a > .post-title {
+.post-preview > a .post-title {
   font-family: "Raleway", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 42px;
   line-height: 1.3;
   margin-top: 30px;
   margin-bottom: 8px;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.post-preview > a:hover .post-title,
+.post-preview > a:focus .post-title{
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 @media (max-width: 480px){
@@ -727,21 +739,6 @@ pre code {
   margin-bottom: 10px;
 }
 
-
-.post-preview > a .post-title{
-  /*position: relative;*/
-  /*display: inline-block;*/
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  transition: transform 0.3s;
-}
-
-.post-preview > a:hover .post-title,
-.post-preview > a:focus .post-title{
-  -webkit-transform: translateY(-4px);
-  -moz-transform: translateY(-4px);
-  transform: translateY(-4px);
-}
 
 .post-preview > .post-meta {
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
@@ -1098,7 +1095,7 @@ img::-moz-selection {
   }
 }
 .one-tag-list .tag-text {
-  /*font-weight: bolder;*/
+  font-weight: bolder;
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   /*color: #4A4A4A;*/
@@ -1109,13 +1106,21 @@ img::-moz-selection {
   position: relative;
 }
 .one-tag-list .post-preview > a .post-title {
+  font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .one-tag-list .post-preview > a .post-subtitle {
   font-size: 12px;
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+.one-tag-list .post-preview > a:hover .post-title,
+.one-tag-list .post-preview > a:focus .post-title {
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 .one-tag-list .post-preview > .post-meta {
   position: absolute;
@@ -1131,6 +1136,9 @@ img::-moz-selection {
 @media only screen and (min-width: 768px) {
   .one-tag-list .post-preview {
     margin-left: 20px;
+  }
+  .one-tag-list{
+  margin-top: 50px;
   }
   .one-tag-list .post-preview > a > .post-title {
     font-size: 18px;
