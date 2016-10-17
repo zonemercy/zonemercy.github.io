@@ -7,9 +7,9 @@ layout: default
     header.intro-header{
         position: relative;
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
-    }
-    header.h1{
-        color: #000;
+        }
+    .site-heading, .intro-header .post-heading, .intro-header .page-heading {
+        color: #444;
     }
 
 /*    {% if page.header-mask %}
@@ -21,7 +21,6 @@ layout: default
     }
     {% endif %}*/
 
-    body {padding: 0px;}
 </style>
 <header class="intro-header" >
     <div class="header-mask"></div>
