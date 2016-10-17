@@ -9,17 +9,16 @@ layout: default
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
     }
 
-    {% if page.header-mask %}
+/*    {% if page.header-mask %}
     header.intro-header .header-mask{
         width: 100%;
         height: 100%;
         position: absolute;
         background: rgba(0,0,0, {{ page.header-mask }});
     }
-    {% endif %}
+    {% endif %}*/
 
-    body {
-    padding: 0px;}
+    body {padding: 0px;}
 </style>
 <header class="intro-header" >
     <div class="header-mask"></div>
@@ -166,5 +165,7 @@ s.setAttribute('data-timestamp', +new Date());
             margin-top : -0.1em;
         }
     }
+    body {padding: 0px;}
 </style>
+
 {% endif %}
