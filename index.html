@@ -5,6 +5,8 @@ header-mask: "0.2"
 ---
 
 {% for post in paginator.posts %}
+  {% if post.layout contains 'ipython' %}
+  {% else %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
@@ -34,6 +36,7 @@ header-mask: "0.2"
 
 </div>
 <hr style="margin-top: 10px;">
+{% endif %}
 {% endfor %}
 <!--                     <div class="tags">
                         {% for tag in site.tags %}
