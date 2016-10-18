@@ -54,7 +54,7 @@ images:
         background-size: cover;
         background-color: #ccc; 
       }
-      body {background-color: #000}
+/*      body {background-color: #000}*/
 </style>
 
 <link rel="stylesheet" href="../css/lightbox.min.css">
@@ -62,23 +62,12 @@ images:
 
     <div class="imagegrid">
      
-<!--         {% for image in page.imgfolder %}
+        {% for image in page.imgfolder %}
         <div class="imageblock">
           <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="example-set" title="{{ image.text }}" style="background-image:url('{{ page.imgfolder }}/{{ image.thumb }}'); "></a>             
         </div>
-        {% endfor %} -->
-        {% for image in site.images.photo %}
-        <div class="imageblock">
-          <a href="{{ page.imgfolder }}/{{ image }}" data-lightbox="example-set" title="{{ image }}" style="background-image:url('{{ page.imgfolder }}/{{ image }}'); "></a>             
-        </div>
         {% endfor %}
-<!--         <div style="display: inline-block;
-                      width:100vw; height:100vw; 
-                      max-width:200px; max-height:200px;
-                      background-size: cover;
-                      background-color: #ccc;">
-          <h1 style="position:absolute;font-size:48px;">NEXT?</h1>             
-        </div> -->
+
     </div>
 
   <!--       <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
