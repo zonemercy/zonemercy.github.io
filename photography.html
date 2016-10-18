@@ -62,7 +62,7 @@ images:
 
     <div class="imagegrid">
      
-        {% for image in page.imgfolder %}
+        {% for image in page.images %}
         <div class="imageblock">
           <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="example-set" title="{{ image.text }}" style="background-image:url('{{ page.imgfolder }}/{{ image.thumb }}'); "></a>             
         </div>
