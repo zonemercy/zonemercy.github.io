@@ -1,29 +1,20 @@
 ---
 title: zonemercy's photography
 layout: default
-imgfolder: /images
+imgfolder: /images/photo
 images:
   - name: appt1656.jpg
     thumb: appt1656.jpg
-    text: The first image 其实我就想试一下,如果描述文字很长的段落会是什么样的效果.是不是内嵌的字体更有明信片的感觉呢?其实我就想试一下,如果描述文字很长的段落会是什么样的效果.是不是内嵌的字体更有明信片的感觉呢? The first image 其实我就想试一下,如果描述文字很长的段落会是什么样的效果.是不是内嵌的字体更有明信片的感觉呢?其实我就想试一下,如果描述文字很长的段落会是什么样的效果.是不是内嵌的字体更有明信片的感觉呢?
+    text: appt 
   - name: cat1.jpg
     thumb: cat1.jpg
-    text: The second image
-  - name: appt1656.jpg
-    thumb: appt1656.jpg
-    text: The first image
-  - name: cat1.jpg
-    thumb: cat1.jpg
-    text: The second image
-  - name: appt1656.jpg
-    thumb: appt1656.jpg
-    text: The first image
+    text: cat
   - name: swiss3.jpg
     thumb: swiss3.jpg
-    text: The second image
+    text: swiss1
   - name: swiss2.jpg
     thumb: swiss2.jpg
-    text: The second image
+    text: swiss2
 ---
 
 
@@ -71,9 +62,14 @@ images:
 
     <div class="imagegrid">
      
-        {% for image in page.images %}
+<!--         {% for image in page.imgfolder %}
         <div class="imageblock">
           <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="example-set" title="{{ image.text }}" style="background-image:url('{{ page.imgfolder }}/{{ image.thumb }}'); "></a>             
+        </div>
+        {% endfor %} -->
+        {% for image in site.image.photo %}
+        <div class="imageblock">
+          <a href="{{ page.imgfolder }}/{{ image }}" data-lightbox="example-set" title="{{ image }}" style="background-image:url('{{ page.imgfolder }}/{{ image }}'); "></a>             
         </div>
         {% endfor %}
 <!--         <div style="display: inline-block;
