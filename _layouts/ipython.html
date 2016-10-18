@@ -12,6 +12,7 @@ layout: default
     .site-heading, .intro-header .post-heading, .intro-header .page-heading {
         color: #333;
     }
+
     @media only screen and (min-width: 768px) {
       .intro-header .site-heading,
       .intro-header .post-heading,
@@ -20,10 +21,19 @@ layout: default
       }
     }
 
-/*    .navbar-default {
+    @media only screen and (min-width: 768px) {
+        .navbar-custom.is-fixed {
+            position: fixed;
+            top: -61px;
+            background-color: rgba(238, 238, 238, 0.85);
+        }
+
+    }
+
+    .navbar-default {
         background-color: transparent !important;
         border-color: transparent !important;
-    }*/
+    }
 
 /*    {% if page.header-mask %}
     header.intro-header .header-mask{
