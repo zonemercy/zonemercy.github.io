@@ -8,14 +8,17 @@ layout: default
         position: relative;
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
         }
+
     .site-heading, .intro-header .post-heading, .intro-header .page-heading {
         color: #333;
     }
-
-    @media only screen and (min-width: 768px)
-    .intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
+    @media only screen and (min-width: 768px) {
+      .intro-header .site-heading,
+      .intro-header .post-heading,
+      .intro-header .page-heading {
          padding: 80px 0 50px; 
-        }
+      }
+    }
 
     .navbar-default {
         background-color: transparent !important;
@@ -124,15 +127,6 @@ layout: default
     </div>
 
 </article>
-<style type="text/css">
-    .navbar-default {
-        background-color: transparent;
-    }   
-    .navbar-custom {
-        background: transparent;
-      }
-</style>
-
 
 <script>
 /**
