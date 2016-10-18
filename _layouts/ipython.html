@@ -9,17 +9,21 @@ layout: default
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
         }
     .site-heading, .intro-header .post-heading, .intro-header .page-heading {
-        color: #444;
+        color: #333;
     }
 
-    {% if page.header-mask %}
+    .navbar-default {
+        background-color: transparent;
+    }
+
+/*    {% if page.header-mask %}
     header.intro-header .header-mask{
         width: 100%;
         height: 100%;
         position: absolute;
         background: rgba(0,0,0, {{ page.header-mask }});
     }
-    {% endif %}
+    {% endif %}*/
 
 </style>
 <header class="intro-header" >
