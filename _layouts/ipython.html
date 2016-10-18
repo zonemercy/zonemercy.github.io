@@ -12,12 +12,18 @@ layout: default
         color: #333;
     }
 
+    @media only screen and (min-width: 768px)
+    .intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
+         padding: 80px 0 50px; 
+        }
+
     .navbar-default {
-        background-color: transparent;
+        background-color: transparent !important;
+        border-color: transparent !important;
     }
 
     .navbar-custom {
-        background: transparent;
+        background: transparent !important;
       }
 
 /*    {% if page.header-mask %}
