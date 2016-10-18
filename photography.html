@@ -15,6 +15,14 @@ images:
   - name: swiss2.jpg
     thumb: swiss2.jpg
     text: swiss2
+  - name: FW001.jpg
+    text: FW001
+  - name: FW002.jpg
+    text: FW002
+  - name: FW004.jpg
+    text: FW004
+  - name: FW005.jpg
+    text: FW005
 ---
 
 
@@ -64,7 +72,7 @@ images:
      
         {% for image in page.images %}
         <div class="imageblock">
-          <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="example-set" title="{{ image.text }}" style="background-image:url('{{ page.imgfolder }}/{{ image.thumb }}'); "></a>             
+          <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="example-set" title="{{ image.text }}" style="background-image:url('{{ page.imgfolder }}/{{ image.name }}'); "></a>             
         </div>
         {% endfor %}
 <!--         <div style="display: inline-block;
