@@ -67,7 +67,7 @@ images:
           <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="example-set" title="{{ image.text }}" style="background-image:url('{{ page.imgfolder }}/{{ image.thumb }}'); "></a>             
         </div>
         {% endfor %} -->
-        {% for image in site.image.photo %}
+        {% for image in site.images.photo %}
         <div class="imageblock">
           <a href="{{ page.imgfolder }}/{{ image }}" data-lightbox="example-set" title="{{ image }}" style="background-image:url('{{ page.imgfolder }}/{{ image }}'); "></a>             
         </div>
