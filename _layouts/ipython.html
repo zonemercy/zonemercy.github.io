@@ -4,14 +4,18 @@ layout: default
 
 <!-- Post Header -->
 <style type="text/css">
-    body {padding: 0px !important;}
+    body {
+        padding: 0px !important;
+    }
 
     header.intro-header{
         position: relative;
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
-        }
+    }
 
-    .site-heading, .intro-header .post-heading, .intro-header .page-heading {color: #333;}
+    .site-heading, .intro-header .post-heading, .intro-header .page-heading {
+        color: #333;
+    }
 
     @media only screen and (min-width: 768px) {
       .intro-header .site-heading,
@@ -27,7 +31,6 @@ layout: default
             top: -61px;
             background-color: rgba(238, 238, 238, 0.85) !important;
         }
-
     }
 
     .navbar-default {
