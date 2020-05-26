@@ -17,6 +17,11 @@ tags:
 ##  Motivation <i class="fa fa-usd"></i> 
 
 
+test $3x^2 + 5x +1 = 0$
+
+$$
+x_{1,2} = \frac{-5 \pm \sqrt{5^2-12}}{6}
+$$
 
 ## "Page Build Warning" email
 
